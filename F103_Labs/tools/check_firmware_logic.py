@@ -54,7 +54,7 @@ class Machine:
         if self.oled_bus is not None:
             self.w32(GPIOB,0x44444444)
             self.w32(GPIOB+4,0x44444444)
-            self.w32(GPIOB+8,0x0C00)
+            self.w32(GPIOB+8,0x00C0)
         self.w32(0x40021004,0x001D040A) # PLL HSE x9, SYSCLK=72M, APB1 /2
         self.w32(USART,0x80)  # TXE; no receive byte pending.
         self.uc.hook_add(UC_HOOK_CODE,self.on_block,begin=self.boundary,end=self.boundary+1)
@@ -81,9 +81,9 @@ class Machine:
     def variable(self,name):return self.r32(self.symbols[name])
     def mmio_read(self,uc,offset,size,user):
         if self.oled_bus is not None and offset==GPIOB+8-0x40000000:
-            value=self.r32(GPIOB+8)&~0x0C00
-            value|=self.oled_bus.scl<<10
-            value|=self.oled_bus.sda<<11
+            value=self.r32(GPIOB+8)&~0x00C0
+            value|=self.oled_bus.scl<<6
+            value|=self.oled_bus.sda<<7
             return value&((1<<(size*8))-1)
         return int.from_bytes(self.peripherals[offset:offset+size],'little')
     def mmio_write(self,uc,offset,size,value,user):
@@ -108,10 +108,10 @@ class Machine:
                 old=self.r32(GPIOB+0x0C)
                 new=(old&~(value&0xFFFF)) if addr==GPIOB+0x14 else ((old&~((value>>16)&0xFFFF))|(value&0xFFFF))
                 self.w32(GPIOB+0x0C,new)
-            crh=self.r32(GPIOB+4);odr=self.r32(GPIOB+0x0C)
+            crl=self.r32(GPIOB);odr=self.r32(GPIOB+0x0C)
             released=[]
-            for pin in (10,11):
-                mode=(crh>>(4*(pin-8)))&15
+            for pin in (6,7):
+                mode=(crl>>(4*pin))&15
                 released.append(bool(odr&(1<<pin)) if mode&3 else True)
             self.oled_bus.update(*released,ms=self.ms)
 

@@ -5,22 +5,23 @@
 当前屏幕接口已由用户确认，控制芯片和分辨率尚未确认；固件按SSD1306、128×64、3.3V模块适配。
 SH1106、128×32或其他控制器不能仅凭四针外形认定兼容。
 
-断开底板和ST-Link的USB后接线，核心板保留在底板上：OLED GND→GND、VCC→3V3、SCL/SCK→PB10、SDA→PB11。
-从标有PB10/PB11的GPIO引出，按丝印连接，不能推定底板OLED插座的针序或网络相同。
+断开底板和ST-Link的USB后接线，核心板保留在底板上：OLED GND→GND、VCC→3V3、SCL/SCK→板上SCL（PB6）、SDA→板上SDA（PB7）。
+2026-10-13按普中官方OLED插座原理图修正为PB6/PB7，与用户现有SCL/SDA接线对应；旧版PB10/PB11接线说明不再适用。
+依据：https://blog.csdn.net/2501_92850798/article/details/150758386 的硬件设计原理图（正文将PB6/PB7顺序写反，以原理图和第34章EEPROM说明为准）。
 SCL/SDA采用开漏输出，需要上拉至3.3V（通常模块已带上拉）；本实验不使用矩阵键盘。
 首次正常刷新后显示LAB8 OLED READY、BLINK: OFF和K1:BLINK K4:MSG。
 K1启停D1，启动后每1000ms翻转；K4通过EXTI事件在主循环显示“嵌入式实验完成啦”。
 
 驱动探测七位地址0x3C/0x3D，每轮最多发送16个显存数据字节。无应答或总线卡低会退出显示通信，按键与LED逻辑继续运行；修线后按RESET重新检测。
 ACK不能识别控制器，也不能证明画面正确。串口中文仅为辅助日志，必须观察实体OLED验收。
-本次没有下载新OLED程序，尚未取得OLED亮屏、方向和汉字的实物证据。
+2026-10-13已补入三张实物照片，确认亮屏、BLINK ON/OFF状态和完整中文显示；周期与长按行为仍需动态验证。照片位于docs/images/20261013_oled/。
 
 源码：Labs/08_Application/main.c、oled.c、oled.h、oled_font.h。Keil目标仍为08_Application。
 OLED离线模型测试入口：tools/check_oled_logic.py；结果写入Build/oled_logic_check_results.json。
 2026-10-13新增OLED八组离线测试全部通过：两个地址、显存分块及开屏、帧中更新、按键和闪烁并行、无屏NACK、SCL/SDA卡低及刷新中故障。原八组固件逻辑回归也全部通过。
 测试执行实际AXF并解码GPIOB通信，只跳过纯CPU延时；模型注入时间和按键中断，不能代替实体屏幕、电气波形或真实计时验收。
 工程、旧PC显示版源码及旧编译产物已备份：Backup/20261013_before_oled.zip。
-新Word补充指南：D:\Work\嵌入式实验\实验八_OLED接线与调试流程_20261013.docx。
+旧Word补充指南中的PB10/PB11接线已过时，请以本README的板载插座接线为准。文档路径：D:\Work\嵌入式实验\实验八_OLED接线与调试流程_20261013.docx。
 旧20261004完整指南的实验1—7流程继续适用；其旧实验八PC显示章节由本次补充指南替代。
 
 ## 入口
@@ -43,6 +44,9 @@ J11 短接以启用 LED；J1 接 VCC 侧禁用点阵输出。改跳线前先断�
 Keil 5.43.1 / Arm Compiler 6.24；F1 DFP 2.4.1 已安装。
 工程随附 STM32F1 SPL 和 CMSIS 5.9，时钟采用 ST 系统文件：8 MHz HSE、PLL x9、HCLK 72 MHz、APB1 36 MHz。
 Tera Term：D:\TeraTerm\ttermpro.exe，115200/8N1/无流控/UTF-8。
+
+2026-10-13 串口实测：CH340 当前为 COM6。Tera Term 除 115200/8N1/无流控外，还需将 FlowCtrlDTR=0、FlowCtrlRTS=0（禁用）保存到配置中；仅选择“无流控”仍可能使控制线干扰本板启动。已验证配置：tools/teraterm_lab6.ini。实验六在该配置下返回启动信息、OK Y LED0=1、OK N LED0=0 和 STATE，RX_ERRORS=0。更换 USB 接口后请重新确认 COM 号。
+
 FlyMCU：D:\FlyMCU\FlyMcu.exe，用于串口 ISP。串口需先从 Tera Term 断开。
 CH340 驱动已在 Windows 驱动库中：oem46.inf，3.9.2024.9，微软有效签名；备份 D:\CH340_Driver\Installed_Driver_Backup。
 复用已安装的 D:\F411_PythonEnv\Scripts\python.exe 进行离线校验及板上验证，目录名沿用旧名，操作对象已改为 F103。

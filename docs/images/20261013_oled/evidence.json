@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-13",
+  "evidence_type": "user_supplied_photographs",
+  "pins": {
+    "SCL": "PB6",
+    "SDA": "PB7"
+  },
+  "observed": [
+    "OLED startup English interface",
+    "BLINK OFF",
+    "BLINK ON and D1 lit at capture",
+    "Complete Chinese message"
+  ],
+  "not_established": [
+    "Exact controller model",
+    "1 second blink timing",
+    "Long-press debounce",
+    "Concurrent button behavior"
+  ],
+  "photos": {
+    "01_oled_ready_off.jpg": {
+      "original": "微信图片_20261013163016_70_66.jpg",
+      "sha256": "e99cc39bf6301af4a943f23f14b32ff31a0e671c5380c33f1948b7085c919249"
+    },
+    "02_oled_blink_on.jpg": {
+      "original": "微信图片_20261013163005_69_66.jpg",
+      "sha256": "98368aaca2e573d43694597bb0ca61f1e919462320c97e30e77e73613c31ccdf"
+    },
+    "03_oled_chinese.jpg": {
+      "original": "微信图片_20261013162955_68_66.jpg",
+      "sha256": "4d1440e8a5017912d67814c03a7b9c14416395c71c3912b002a6c01f43c840d9"
+    }
+  }
+}

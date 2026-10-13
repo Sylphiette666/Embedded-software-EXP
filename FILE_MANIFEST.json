@@ -1,88 +1,19 @@
 {
   "date": "2026-10-13",
-  "report_pages": 22,
-  "report_visual_qa": "All 22 pages inspected",
-  "hardware_tests_added_by_report_integration": false,
+  "report_pages": 25,
+  "report_visual_qa": "All 25 pages inspected after Word PDF export and PNG rendering",
+  "hardware_evidence_added": [
+    "Lab 6 Tera Term screenshot",
+    "Three user-supplied OLED board photographs"
+  ],
   "files": {
     ".gitattributes": {
       "bytes": 9,
       "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
     },
     ".gitignore": {
-      "bytes": 40,
-      "sha256": "a0b9b46e6f33b26de79f1fb5f722d253cbbfd28db282f672539f72eca48ee148"
-    },
-    "archives/NUCLEO_F411RE_实验工程.zip": {
-      "bytes": 1014911,
-      "sha256": "2b8f504bcdfe457a47ae663eb3be8740476b74e7e26cc8ad5ae668ad01a1f2fa"
-    },
-    "archives/NUCLEO_F411RE_实验工程_已检查.zip": {
-      "bytes": 889163,
-      "sha256": "8b3eb31cb90ada1bc79111dbd87951cfed4747f60f6d27f185144bc262794e5f"
-    },
-    "archives/普中精灵F103_八项实验工程_已检查.zip": {
-      "bytes": 615863,
-      "sha256": "69441012210fb96967d43a7d36bfeb0608b349b70ca59cd145a72da264246422"
-    },
-    "archives/普中精灵F103_完整源码_OLED版_20261013.zip": {
-      "bytes": 23940799,
-      "sha256": "4d7a2954bee18692fd8a2208f95101afc93f61a224f08b881a51db1674cb31c7"
-    },
-    "archives/普中精灵F103_完整源码与实测记录_20261004.zip": {
-      "bytes": 21191384,
-      "sha256": "0d6396ca0b287e969cc5ec723fc8c4c13f59d38d7021f9aef8c458da6b59cd31"
-    },
-    "docs/configuration/实验工程入口.md": {
-      "bytes": 7920,
-      "sha256": "4ad8adfe09a6563c84335b4692fcfc6b6eeeae18c39a74565a3ac06299b3da78"
-    },
-    "docs/configuration/当前硬件配置.md": {
-      "bytes": 7920,
-      "sha256": "4ad8adfe09a6563c84335b4692fcfc6b6eeeae18c39a74565a3ac06299b3da78"
-    },
-    "docs/configuration/软件与环境安装记录.md": {
-      "bytes": 5128,
-      "sha256": "31bfa3040f78bb8218165f870000fc4c3db1c2817bedc3badcfe29cbe68b4c53"
-    },
-    "docs/configuration/软件与环境安装记录_F103.md": {
-      "bytes": 7920,
-      "sha256": "4ad8adfe09a6563c84335b4692fcfc6b6eeeae18c39a74565a3ac06299b3da78"
-    },
-    "docs/history/NUCLEO_F411RE_八项实验详细调试流程.docx": {
-      "bytes": 298107,
-      "sha256": "259f476f832eba89d689cc037513bbbae774ed9112f89240f238ba8f966885e5"
-    },
-    "docs/history/嵌入式系统实验报告_NUCLEO_F411RE.docx": {
-      "bytes": 52648,
-      "sha256": "0ab2cfd08627d520a6aa317f1a3c8db18ba60183e75c6a260a31f9cc4b042bba"
-    },
-    "docs/history/普中精灵F103_上板验证与源码调试流程_20261004.docx": {
-      "bytes": 53955,
-      "sha256": "0ded7ba21815333d820c285bbc8f662a2ad1802380115ab1643b37413435d337"
-    },
-    "docs/history/普中精灵F103_八项实验详细调试流程.docx": {
-      "bytes": 46845,
-      "sha256": "4db35d3c71e2ea40799e73f657daa4e491af48b4656866d94586019edc9a1c22"
-    },
-    "docs/images/STM32F103_接线示意图_20261013.png": {
-      "bytes": 1854053,
-      "sha256": "029d034e164aac410f19d4bb789a79ea5fb2a95429985a845974c221bc4065cd"
-    },
-    "docs/images/STM32F103_接线示意图_生成说明_20261013.txt": {
-      "bytes": 3798,
-      "sha256": "4a165e264385c2abaa5e018c1f3296f30de7602b50abb8901443c00d75e73ce3"
-    },
-    "docs/reference/嵌入式系统实验指导书.docx": {
-      "bytes": 845073,
-      "sha256": "cbc64b41ab421890fbc358b1000f07641e710272eca971244b88f18a07852783"
-    },
-    "docs/实验八_OLED接线与调试流程_20261013.docx": {
-      "bytes": 44848,
-      "sha256": "7e484f1e6c356a4c79dedf3f043adcbff701546bfe605a8a6cb35d7b4159093a"
-    },
-    "docs/嵌入式系统实验报告_STM32F103_OLED整合版_20261013.docx": {
-      "bytes": 55568,
-      "sha256": "660dc509f4dcb12c093a28cc655a71ca5354d1b08fb605e8fb6f6070395f3698"
+      "bytes": 355,
+      "sha256": "0eac1e1c87e996d4ce9d299a91d187ceb517ff8a46567302cd215de2515e9916"
     },
     "F103_Labs/App/platform.c": {
       "bytes": 7755,
@@ -127,10 +58,6 @@
     "F103_Labs/Backup/20261013_软件与环境安装记录_F103.md.bak": {
       "bytes": 4200,
       "sha256": "31cc4bed843ab7efb30f20d23d5d2a84b76947ed6ef40876339c294ded0035fa"
-    },
-    "F103_Labs/Backup/before_board_validation_20261004.zip": {
-      "bytes": 40435,
-      "sha256": "cdee6954aef187b13f1785722ad5628bbc60a4d4dc93648f7ca48bee57c8a662"
     },
     "F103_Labs/Backup/ISP_35ff6f064d58303838561543/20261004_161325_932217_double_read_backup_08000000.bin": {
       "bytes": 65536,
@@ -188,9 +115,13 @@
       "bytes": 570,
       "sha256": "9969ec87010745f06ca92062ff5e85b068affaea933ffaf013b034e4926688cf"
     },
+    "F103_Labs/Backup/before_board_validation_20261004.zip": {
+      "bytes": 40435,
+      "sha256": "cdee6954aef187b13f1785722ad5628bbc60a4d4dc93648f7ca48bee57c8a662"
+    },
     "F103_Labs/Build/Keil_01_Platform/01_Platform.axf": {
-      "bytes": 57820,
-      "sha256": "dce5b4c7fae7d44ef08a944d2f83319d6d7f73791239b460ff868eed7e55faa7"
+      "bytes": 58000,
+      "sha256": "8ddee4290a9e42498c19aeffb7ca83dd8469253df7796419bc60444049b0cad9"
     },
     "F103_Labs/Build/Keil_01_Platform/01_Platform.bin": {
       "bytes": 4432,
@@ -201,16 +132,12 @@
       "sha256": "617ceb0e3683c4efb74611ef9399750fee7b05736984b25072caff310cef83ab"
     },
     "F103_Labs/Build/Keil_01_Platform/01_Platform.map": {
-      "bytes": 85419,
-      "sha256": "c176966755173c99d5bdedc182b6bf6c5f0a149a311c58b6bb568a9fa1fc6fe1"
-    },
-    "F103_Labs/Build/keil_01_Platform.log": {
-      "bytes": 581,
-      "sha256": "23f4c4653f6cdd37855a06a4f57fc10d733a864212a07745009a1d95bf18417f"
+      "bytes": 76209,
+      "sha256": "a636c4d04e12d686e885d44c444b60f66828d8b603b5926db174a4e2c26174b8"
     },
     "F103_Labs/Build/Keil_02_Register/02_Register.axf": {
-      "bytes": 56476,
-      "sha256": "8faa281c8dc3a8dc99bb0ecf4fda5104780afcea7f9257ea71fb8a1c655f10fb"
+      "bytes": 56656,
+      "sha256": "cd757acce16c770aae7342d0231710c9205e042a91e25f9f61ae8e71632ab990"
     },
     "F103_Labs/Build/Keil_02_Register/02_Register.bin": {
       "bytes": 2912,
@@ -221,16 +148,12 @@
       "sha256": "67bef9b6c51c643224480c53e95a35d91582f501f8bf4ab38cbd1a9a10d72819"
     },
     "F103_Labs/Build/Keil_02_Register/02_Register.map": {
-      "bytes": 81931,
-      "sha256": "e1bc8bfc9439c124782e291f6801722994ae4deb0f7fac90577dd210f988cdda"
-    },
-    "F103_Labs/Build/keil_02_Register.log": {
-      "bytes": 730,
-      "sha256": "f9f9ab605a1b7be02d2a916d8aed5bdb557766b1e645d11730cea24b80ad947d"
+      "bytes": 72720,
+      "sha256": "d7b97e4d1d7e164b43ce28f112315f1dca8c2923618dfcd619c20b77f145f387"
     },
     "F103_Labs/Build/Keil_03_StdPeriph/03_StdPeriph.axf": {
-      "bytes": 55964,
-      "sha256": "94d042399bcc743f09a4ea84c51cf272c62075f7c87fd549e4d360c45871097c"
+      "bytes": 56144,
+      "sha256": "ffb9d9d38c5e5e60bb645fbfc98491e3837fcda82b0b481e97b1c7d1fb694092"
     },
     "F103_Labs/Build/Keil_03_StdPeriph/03_StdPeriph.bin": {
       "bytes": 2968,
@@ -241,16 +164,12 @@
       "sha256": "e9dc1ace52291182d5c39b2838fcdd46546ecc6e911410918ff46c60cf23a6ea"
     },
     "F103_Labs/Build/Keil_03_StdPeriph/03_StdPeriph.map": {
-      "bytes": 83189,
-      "sha256": "bd1dc04c82166ac9035e885f4f3c7fb7bdcd407a3f20da38e90bfa9529e25a5b"
-    },
-    "F103_Labs/Build/keil_03_StdPeriph.log": {
-      "bytes": 736,
-      "sha256": "f6059dfc3ee402affacd6dec40db74bbb3e8c7d183da547552f75f6faeb730ad"
+      "bytes": 73978,
+      "sha256": "1c32703485f9a05be2eff654f1a48edd34b4409e5c33228450dc3c4ed0ac84af"
     },
     "F103_Labs/Build/Keil_04_Keys/04_Keys.axf": {
-      "bytes": 58132,
-      "sha256": "3cc8712a02191d88739d2fd00e09c67543ba81131815d8fa145925ddf73336e6"
+      "bytes": 58308,
+      "sha256": "57e4d81248feb82ed6f25ca1f1818c99ef1b109a0ddaa9b9c235c9d770fd6d0d"
     },
     "F103_Labs/Build/Keil_04_Keys/04_Keys.bin": {
       "bytes": 4632,
@@ -261,16 +180,12 @@
       "sha256": "a5e3066a7c5e2f08b3ab4ef2ca0cd9864fa450a741b812080af0e568346bbe8f"
     },
     "F103_Labs/Build/Keil_04_Keys/04_Keys.map": {
-      "bytes": 85847,
-      "sha256": "1dd4c228b606741bee77ed1492c30257e98ff365c159037f8864e5e6da4b43ad"
-    },
-    "F103_Labs/Build/keil_04_Keys.log": {
-      "bytes": 706,
-      "sha256": "5d9bfdb69cdb08008ef81f31625d78cdfb38b6e20b8c7635d0f563db32d7c777"
+      "bytes": 76637,
+      "sha256": "e3f6312097c0edac1b5db2c4bd03a9f4961a166e943c104b2291ffc87d52566b"
     },
     "F103_Labs/Build/Keil_05_EXTI/05_EXTI.axf": {
-      "bytes": 61896,
-      "sha256": "e4e2c84ca615f73fc3e9b6369f2d18fbf5462f18bedaa1be698c958504880bd0"
+      "bytes": 62108,
+      "sha256": "71ede724bc2a7447dc3ca2f5739aa7dce5cbee1de2f22ee5348009b1bd17fe2d"
     },
     "F103_Labs/Build/Keil_05_EXTI/05_EXTI.bin": {
       "bytes": 5008,
@@ -281,16 +196,12 @@
       "sha256": "540be6b24f3514129ad237056b427a471628d325e28b780c5d3630764465eed6"
     },
     "F103_Labs/Build/Keil_05_EXTI/05_EXTI.map": {
-      "bytes": 87448,
-      "sha256": "83d4cd098745a334dd3a8d6d6a2a161e2fa5088fe5ca914c68868937c7e319c1"
-    },
-    "F103_Labs/Build/keil_05_EXTI.log": {
-      "bytes": 706,
-      "sha256": "f9466e061dc9d5c4358e39fb75fcab5fd20fbb7c0a0be92e8bd0a6411788244c"
+      "bytes": 78238,
+      "sha256": "24a93b2864d202985210da6b37d79d26b57eedc7ccc37aab619da71924deff3b"
     },
     "F103_Labs/Build/Keil_06_USART/06_USART.axf": {
-      "bytes": 57780,
-      "sha256": "8bfbaebbbdfc41e0cf5be75a73bb42e80afa4a08545e4913e6f406e648dc8c0a"
+      "bytes": 57964,
+      "sha256": "ad24f842d96650617585c395e6162fa485765b7f107913595d57bf519da0156a"
     },
     "F103_Labs/Build/Keil_06_USART/06_USART.bin": {
       "bytes": 4448,
@@ -301,16 +212,12 @@
       "sha256": "b38390baa101f25c822ec780a8ec15660381a978eef02f7b15bb98f7b85e93fe"
     },
     "F103_Labs/Build/Keil_06_USART/06_USART.map": {
-      "bytes": 85177,
-      "sha256": "bc36d0c13e184bd5c04a0e639509f62ca15540c19f61ade486ce0b57a4d27b87"
-    },
-    "F103_Labs/Build/keil_06_USART.log": {
-      "bytes": 712,
-      "sha256": "a18ffdf2c2f77e917040f02a29a780308d15d4bfbbc55fe3182fc21328cc3d4c"
+      "bytes": 75967,
+      "sha256": "25af64e43a8ea3045e6e36285bd874405743f52e75dcf276b339325a68df5d77"
     },
     "F103_Labs/Build/Keil_07_SysTick/07_SysTick.axf": {
-      "bytes": 57728,
-      "sha256": "452ffbc1ee5a61bbe50cbed1fa563fe6aeadf0087a22e11836d1cd7551caed6e"
+      "bytes": 57904,
+      "sha256": "dc1d4db47868ee9ee147d2e7669ede2900173c59ea914c6fc1e1d8eda5bd869b"
     },
     "F103_Labs/Build/Keil_07_SysTick/07_SysTick.bin": {
       "bytes": 4336,
@@ -321,40 +228,64 @@
       "sha256": "09b6c1083f7b5f35b9f349a64eea72623b1adea94e58867419a425779af87d14"
     },
     "F103_Labs/Build/Keil_07_SysTick/07_SysTick.map": {
-      "bytes": 85081,
-      "sha256": "d80051405a8ea6e2eac4df27a1164c115076d670b990c969645ae44435c14e29"
-    },
-    "F103_Labs/Build/keil_07_SysTick.log": {
-      "bytes": 724,
-      "sha256": "dde451da82318c26a6aa88aa0ab5004584e1844f509c8685b52d107c7b487948"
+      "bytes": 75871,
+      "sha256": "af8de02f949e5b101cd2680b263365d3c32d8f5fcddb6831b6d9f81ea02183cd"
     },
     "F103_Labs/Build/Keil_08_Application/08_Application.axf": {
-      "bytes": 77056,
-      "sha256": "f7094364feee67977566cf0b4e57d2bdb39ab7fa2f6dbadcf3de62e11343c783"
+      "bytes": 77404,
+      "sha256": "1e4baeb31a53bcddd9c89b924015c8708ce86711dd8318736265494245db2e4e"
     },
     "F103_Labs/Build/Keil_08_Application/08_Application.bin": {
-      "bytes": 9424,
-      "sha256": "e89b7cbd46ed03c75b1575bf13e8612410290bd6401c707a57676a3cfcef33aa"
+      "bytes": 9408,
+      "sha256": "e72478a19a5b1af728dc30764e2de3bf7e45db55558510d09b2caf5708ee65d3"
     },
     "F103_Labs/Build/Keil_08_Application/08_Application.hex": {
-      "bytes": 26556,
-      "sha256": "b6a6e89848f70bc9da50ef7112b297786d30b6e3f06dbe510f682583f836421d"
+      "bytes": 26511,
+      "sha256": "2ec576a26d9fe8268de12b5eb21ae17e0df704d31e9ba9c4c3cab1b658b47f1f"
     },
     "F103_Labs/Build/Keil_08_Application/08_Application.map": {
-      "bytes": 96527,
-      "sha256": "0f89fae3576278fd98dde2f80e0e8928037152dc9c954c4b3c5b4c27cfb0af86"
+      "bytes": 96631,
+      "sha256": "e27c7db8815667910e5718a74edbc08523afc8b691798956d01e569df1b77628"
+    },
+    "F103_Labs/Build/keil_01_Platform.log": {
+      "bytes": 560,
+      "sha256": "bf77488ba8ed0db6c668fe4c1d5276da92ff6270230a1d694f937d42ad21e367"
+    },
+    "F103_Labs/Build/keil_02_Register.log": {
+      "bytes": 709,
+      "sha256": "986a19e855d9d6b89c7299fa77e13286431797bcd644965050be5cbaf62f5016"
+    },
+    "F103_Labs/Build/keil_03_StdPeriph.log": {
+      "bytes": 715,
+      "sha256": "94148270842ac60b55d4e3e6757dd02b33f518050fae7a11eea38e3d16fc367e"
+    },
+    "F103_Labs/Build/keil_04_Keys.log": {
+      "bytes": 685,
+      "sha256": "3103ef2b814c7467397079a9d2b0e557117577b833adae5d4eb3e695e5a34c67"
+    },
+    "F103_Labs/Build/keil_05_EXTI.log": {
+      "bytes": 685,
+      "sha256": "daa5ba334ee3f642c0ca19b4323979da55e2e456e1b84f8fea036dbf67cad743"
+    },
+    "F103_Labs/Build/keil_06_USART.log": {
+      "bytes": 691,
+      "sha256": "796ffbb26c050e48855e1058b2da17b1bee52ba73d40b3c326ec2e37073f299c"
+    },
+    "F103_Labs/Build/keil_07_SysTick.log": {
+      "bytes": 703,
+      "sha256": "97cc1c51fd95123dac72589b80ea9096b1105c585b52238b6a46a28d16f2ce9f"
     },
     "F103_Labs/Build/keil_08_Application.log": {
       "bytes": 749,
-      "sha256": "d4955b9cf31479cecae3e3f2ac71a0ccad28113edaf1f7b1b3325ca282d9b6bf"
+      "sha256": "fff10b572aaef2f2a77f9fe58c326a5cd371d46ccbb5559af391c0069f31cd97"
     },
     "F103_Labs/Build/keil_results.json": {
       "bytes": 3419,
-      "sha256": "cded504e312bc17abbe688e724af31e999fa59f4fa8e703f8abec37cbc09c879"
+      "sha256": "6695e7e0cb892fb4f257c21052e9c3be81b3f52095e46fa414501825aac20d8e"
     },
     "F103_Labs/Build/logic_check_results.json": {
       "bytes": 2183,
-      "sha256": "bb7671178a70278cb984aeb1e84b167b0ad4cf5e5a9be5daa2ddbaadd2e64519"
+      "sha256": "f5c5ac93c48f3c6c0519b8c139a910f0958c43a78b07012359a0120855c58c0f"
     },
     "F103_Labs/Build/oled_change_hex_comparison.json": {
       "bytes": 1862,
@@ -366,11 +297,15 @@
     },
     "F103_Labs/Build/oled_logic_check_results.json": {
       "bytes": 2081,
-      "sha256": "b63c5088fe94fe063c6e0644227042fb96b79b24439d33c37a028328e595e151"
+      "sha256": "255b87c5f5d0e219ca44dab21f671f036c726968811e28e2f1ec8d2c13cc80ac"
+    },
+    "F103_Labs/Build/oled_socket_hex_comparison.json": {
+      "bytes": 1228,
+      "sha256": "377a1a8d729e48913c8a554419cbd23bd511c9f30b12fb2d4ec1ffcf225f3655"
     },
     "F103_Labs/Build/project_check_results.json": {
       "bytes": 11707,
-      "sha256": "d03aa87a3a07ed0052a8b83fb858452acd089429fe019bcc2b7f687958fda23d"
+      "sha256": "507fb71160c71f11bed46cf74d471fd19023d81940d93be6853774c422e3a818"
     },
     "F103_Labs/Evidence/20261004/20261004_161206_725062_identify-backup.json": {
       "bytes": 2438,
@@ -637,16 +572,16 @@
       "sha256": "e43239114dcedf4c79134efccce401bb158c857417791ad4ce97bdb572aef8f8"
     },
     "F103_Labs/Labs/08_Application/main.c": {
-      "bytes": 1418,
-      "sha256": "46f27231d4579ca0a5f322c920f927fd098e7be19ced9738cc510c6cbd6cf4f6"
+      "bytes": 1483,
+      "sha256": "ec8fe54c3a84760006d2b19b0d3a352a500ca88b116eadccd4a567e4c9f25c37"
     },
     "F103_Labs/Labs/08_Application/oled.c": {
-      "bytes": 10796,
-      "sha256": "6e2c392a5749777e3aeb62bb324e42b3f7b60517d753282d37918e775ceebbd5"
+      "bytes": 10846,
+      "sha256": "94dfb3c7a4f760b3079264a8ae553098925533167ab359c89b8bb8706320ff17"
     },
     "F103_Labs/Labs/08_Application/oled.h": {
-      "bytes": 1532,
-      "sha256": "36ffbf236827f876deee4d4713cfb6d3ac85611a6230db6133c6be9a1730e170"
+      "bytes": 1549,
+      "sha256": "cb0abcaa3aaad46ccc015b99e087ca34dd58f98c90d50b5d9f12c753a919a639"
     },
     "F103_Labs/Labs/08_Application/oled_font.h": {
       "bytes": 11491,
@@ -657,56 +592,20 @@
       "sha256": "fddfe69b4530459a616f5dc24ab1ce43808ed64821c2d82f697b6318b8cb75c1"
     },
     "F103_Labs/MDK/F103_Labs.uvprojx": {
-      "bytes": 282086,
-      "sha256": "a347e0a1fcf0fd19f266d5e0991aca03453815cad0ffc33dbb04bb24c85862a0"
+      "bytes": 282835,
+      "sha256": "81e04326361e37d758c854278d1967337716a8bd4fce883680672983014b2d32"
     },
     "F103_Labs/MDK/flash.sct": {
       "bytes": 224,
       "sha256": "77c32897a8ad3047bd1290aa2b3aa9c50234ff5658889b9b446a2dfeafed96bc"
     },
     "F103_Labs/README.md": {
-      "bytes": 7911,
-      "sha256": "283ea8c24f11fd13e4e7a9ebe63b8b05f0a82bd68a3ecdbe905a4ebf65fb260e"
+      "bytes": 8759,
+      "sha256": "409b6138fd5791d42d55456a8df6e48ad32bc48f19087003f21dcb99718b1194"
     },
-    "F103_Labs/tools/bench_isp.py": {
-      "bytes": 19853,
-      "sha256": "8471d19f2794eebb4dd6b451d0715fa71bca06d7433825dde8b30f500a39028a"
-    },
-    "F103_Labs/tools/bench_serial.py": {
-      "bytes": 16189,
-      "sha256": "de331ee72f7d296f3194b5f0a644b8e6211c597606f460f48e42fad15e774bf0"
-    },
-    "F103_Labs/tools/bench_swd.py": {
-      "bytes": 28080,
-      "sha256": "2f25f39f33271cc8b44024a5a07a187ec8e1a79aede7332ed3876db13a30f99f"
-    },
-    "F103_Labs/tools/build_keil.py": {
-      "bytes": 2537,
-      "sha256": "8d52aa10d37b0207e29d90963ce6b32c498ddcca18221edc437a2184daa56fca"
-    },
-    "F103_Labs/tools/check_firmware_logic.py": {
-      "bytes": 14040,
-      "sha256": "a5850da665509b0a09f84d1a3778d2f59cb8ea2e405e2269e34ad844779b23bd"
-    },
-    "F103_Labs/tools/check_oled_logic.py": {
-      "bytes": 17376,
-      "sha256": "1f80040b25072992daccdee69baea12d2ae89d75a345ce6f4eceab089988dc2c"
-    },
-    "F103_Labs/tools/check_project.py": {
-      "bytes": 5479,
-      "sha256": "bd6de2ad335701f4a5a2a9109a566e8b9ddcf270629383e0098680449463a6e6"
-    },
-    "F103_Labs/tools/generate_oled_font.py": {
-      "bytes": 2802,
-      "sha256": "6027cc80c29384cab851d3afb0be20c25c6c8f39ee1328029573894bbdf3f429"
-    },
-    "F103_Labs/tools/requirements.txt": {
-      "bytes": 78,
-      "sha256": "a7ac14fdb7ddf640bbdfad0b1b30df10a2de206c0b1e5d2abd83d1d86c4082e8"
-    },
-    "F103_Labs/tools/summarize_evidence.py": {
-      "bytes": 19635,
-      "sha256": "402b4463956890e851143b2e5f62361f52b1a2818f869ca1accfc8d92f69dfcb"
+    "F103_Labs/Vendor/CMSIS5_Core/LICENSE.txt": {
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
     },
     "F103_Labs/Vendor/CMSIS5_Core/cmsis_armcc.h": {
       "bytes": 27999,
@@ -736,10 +635,6 @@
       "bytes": 120975,
       "sha256": "f5b63d52dd1557b15ca414cb59c264f595a7b5669db2a5878dffe22f4caedc8c"
     },
-    "F103_Labs/Vendor/CMSIS5_Core/LICENSE.txt": {
-      "bytes": 11357,
-      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
-    },
     "F103_Labs/Vendor/CMSIS5_Core/mpu_armv7.h": {
       "bytes": 11731,
       "sha256": "29206b52ee02290ed6f5a5415ebd4187de802cf176d9b3cb844390d8e5571372"
@@ -759,6 +654,14 @@
     "F103_Labs/Vendor/SOURCES.md": {
       "bytes": 486,
       "sha256": "44da32cbc27ba5f612bba197c473abe1394fdd8e84414b7b36ac4fb81738995e"
+    },
+    "F103_Labs/Vendor/StdPeriph_Driver/LICENSE.txt": {
+      "bytes": 4742,
+      "sha256": "c7ec30c26e3e1cd1972fab8cb88cc6ff0c94698e68cf20acd74fd8ad91827c0f"
+    },
+    "F103_Labs/Vendor/StdPeriph_Driver/Release_Notes.html": {
+      "bytes": 36829,
+      "sha256": "0a145321ee77ebadc3a9fc7688acb0d2d3d8e5171beda17affc56b4c2d61431f"
     },
     "F103_Labs/Vendor/StdPeriph_Driver/inc/misc.h": {
       "bytes": 8641,
@@ -851,14 +754,6 @@
     "F103_Labs/Vendor/StdPeriph_Driver/inc/stm32f10x_wwdg.h": {
       "bytes": 2625,
       "sha256": "8769211b6447aa1762b2216270c6c97662e9b4c99704ff3383b1b89c2152c68c"
-    },
-    "F103_Labs/Vendor/StdPeriph_Driver/LICENSE.txt": {
-      "bytes": 4742,
-      "sha256": "c7ec30c26e3e1cd1972fab8cb88cc6ff0c94698e68cf20acd74fd8ad91827c0f"
-    },
-    "F103_Labs/Vendor/StdPeriph_Driver/Release_Notes.html": {
-      "bytes": 36829,
-      "sha256": "0a145321ee77ebadc3a9fc7688acb0d2d3d8e5171beda17affc56b4c2d61431f"
     },
     "F103_Labs/Vendor/StdPeriph_Driver/src/misc.c": {
       "bytes": 6705,
@@ -968,9 +863,141 @@
       "bytes": 1742,
       "sha256": "98bed0697c2fc399f7e9e3e62f17ccbe7b4343a95af16ae595dcab1bfea554a0"
     },
+    "F103_Labs/tools/bench_isp.py": {
+      "bytes": 19853,
+      "sha256": "8471d19f2794eebb4dd6b451d0715fa71bca06d7433825dde8b30f500a39028a"
+    },
+    "F103_Labs/tools/bench_serial.py": {
+      "bytes": 16189,
+      "sha256": "de331ee72f7d296f3194b5f0a644b8e6211c597606f460f48e42fad15e774bf0"
+    },
+    "F103_Labs/tools/bench_swd.py": {
+      "bytes": 28080,
+      "sha256": "2f25f39f33271cc8b44024a5a07a187ec8e1a79aede7332ed3876db13a30f99f"
+    },
+    "F103_Labs/tools/build_keil.py": {
+      "bytes": 2537,
+      "sha256": "8d52aa10d37b0207e29d90963ce6b32c498ddcca18221edc437a2184daa56fca"
+    },
+    "F103_Labs/tools/check_firmware_logic.py": {
+      "bytes": 14034,
+      "sha256": "a9736e47d1aa2fe4a1ba2a53b7dedd3e2331be738f6bf55f67fbd0e23ce5b24f"
+    },
+    "F103_Labs/tools/check_oled_logic.py": {
+      "bytes": 17373,
+      "sha256": "6cf24577291ea351d3c98e05f686e958f71e03c994c7b9b0dc6cc43668267fad"
+    },
+    "F103_Labs/tools/check_project.py": {
+      "bytes": 5479,
+      "sha256": "bd6de2ad335701f4a5a2a9109a566e8b9ddcf270629383e0098680449463a6e6"
+    },
+    "F103_Labs/tools/generate_oled_font.py": {
+      "bytes": 2802,
+      "sha256": "6027cc80c29384cab851d3afb0be20c25c6c8f39ee1328029573894bbdf3f429"
+    },
+    "F103_Labs/tools/requirements.txt": {
+      "bytes": 78,
+      "sha256": "a7ac14fdb7ddf640bbdfad0b1b30df10a2de206c0b1e5d2abd83d1d86c4082e8"
+    },
+    "F103_Labs/tools/summarize_evidence.py": {
+      "bytes": 19635,
+      "sha256": "402b4463956890e851143b2e5f62361f52b1a2818f869ca1accfc8d92f69dfcb"
+    },
     "README.md": {
-      "bytes": 4494,
-      "sha256": "ad6b0c52bff2b6780fda17d7d3323a9fc35b6310e1a344d146dd6b4eba745934"
+      "bytes": 4719,
+      "sha256": "9e3abec3eb9acce1f08a19a51a81bccffef3ecd9a62c2f2fe458239853079640"
+    },
+    "archives/NUCLEO_F411RE_实验工程.zip": {
+      "bytes": 1014911,
+      "sha256": "2b8f504bcdfe457a47ae663eb3be8740476b74e7e26cc8ad5ae668ad01a1f2fa"
+    },
+    "archives/NUCLEO_F411RE_实验工程_已检查.zip": {
+      "bytes": 889163,
+      "sha256": "8b3eb31cb90ada1bc79111dbd87951cfed4747f60f6d27f185144bc262794e5f"
+    },
+    "archives/普中精灵F103_八项实验工程_已检查.zip": {
+      "bytes": 615863,
+      "sha256": "69441012210fb96967d43a7d36bfeb0608b349b70ca59cd145a72da264246422"
+    },
+    "archives/普中精灵F103_完整源码_OLED版_20261013.zip": {
+      "bytes": 23940799,
+      "sha256": "4d7a2954bee18692fd8a2208f95101afc93f61a224f08b881a51db1674cb31c7"
+    },
+    "archives/普中精灵F103_完整源码与实测记录_20261004.zip": {
+      "bytes": 21191384,
+      "sha256": "0d6396ca0b287e969cc5ec723fc8c4c13f59d38d7021f9aef8c458da6b59cd31"
+    },
+    "docs/configuration/实验工程入口.md": {
+      "bytes": 8010,
+      "sha256": "3303c8ca409f7a092047cd6d5e3379a7c915de1cf594f339d16faa524741eda1"
+    },
+    "docs/configuration/当前硬件配置.md": {
+      "bytes": 8010,
+      "sha256": "3303c8ca409f7a092047cd6d5e3379a7c915de1cf594f339d16faa524741eda1"
+    },
+    "docs/configuration/软件与环境安装记录.md": {
+      "bytes": 5128,
+      "sha256": "31bfa3040f78bb8218165f870000fc4c3db1c2817bedc3badcfe29cbe68b4c53"
+    },
+    "docs/configuration/软件与环境安装记录_F103.md": {
+      "bytes": 8010,
+      "sha256": "3303c8ca409f7a092047cd6d5e3379a7c915de1cf594f339d16faa524741eda1"
+    },
+    "docs/history/NUCLEO_F411RE_八项实验详细调试流程.docx": {
+      "bytes": 298107,
+      "sha256": "259f476f832eba89d689cc037513bbbae774ed9112f89240f238ba8f966885e5"
+    },
+    "docs/history/嵌入式系统实验报告_NUCLEO_F411RE.docx": {
+      "bytes": 52648,
+      "sha256": "0ab2cfd08627d520a6aa317f1a3c8db18ba60183e75c6a260a31f9cc4b042bba"
+    },
+    "docs/history/普中精灵F103_上板验证与源码调试流程_20261004.docx": {
+      "bytes": 53955,
+      "sha256": "0ded7ba21815333d820c285bbc8f662a2ad1802380115ab1643b37413435d337"
+    },
+    "docs/history/普中精灵F103_八项实验详细调试流程.docx": {
+      "bytes": 46845,
+      "sha256": "4db35d3c71e2ea40799e73f657daa4e491af48b4656866d94586019edc9a1c22"
+    },
+    "docs/images/20261013_oled/01_oled_ready_off.jpg": {
+      "bytes": 7292939,
+      "sha256": "e99cc39bf6301af4a943f23f14b32ff31a0e671c5380c33f1948b7085c919249"
+    },
+    "docs/images/20261013_oled/02_oled_blink_on.jpg": {
+      "bytes": 7170212,
+      "sha256": "98368aaca2e573d43694597bb0ca61f1e919462320c97e30e77e73613c31ccdf"
+    },
+    "docs/images/20261013_oled/03_oled_chinese.jpg": {
+      "bytes": 7207306,
+      "sha256": "4d1440e8a5017912d67814c03a7b9c14416395c71c3912b002a6c01f43c840d9"
+    },
+    "docs/images/20261013_oled/evidence.json": {
+      "bytes": 1006,
+      "sha256": "2bd3629256f43539a47a0dc7abd9e46b714aa6a95a98799d53f1dc96ed282d2b"
+    },
+    "docs/images/STM32F103_接线示意图_20261013.png": {
+      "bytes": 1854053,
+      "sha256": "029d034e164aac410f19d4bb789a79ea5fb2a95429985a845974c221bc4065cd"
+    },
+    "docs/images/STM32F103_接线示意图_生成说明_20261013.txt": {
+      "bytes": 3798,
+      "sha256": "4a165e264385c2abaa5e018c1f3296f30de7602b50abb8901443c00d75e73ce3"
+    },
+    "docs/images/lab6_serial_20261013.png": {
+      "bytes": 61538,
+      "sha256": "9c18690fadcc442710570f0f530d701b2c77811e62de9195ea29be6a4eba8aef"
+    },
+    "docs/reference/嵌入式系统实验指导书.docx": {
+      "bytes": 845073,
+      "sha256": "cbc64b41ab421890fbc358b1000f07641e710272eca971244b88f18a07852783"
+    },
+    "docs/实验八_OLED接线与调试流程_20261013.docx": {
+      "bytes": 44848,
+      "sha256": "7e484f1e6c356a4c79dedf3f043adcbff701546bfe605a8a6cb35d7b4159093a"
+    },
+    "docs/嵌入式系统实验报告_STM32F103_OLED整合版_20261013.docx": {
+      "bytes": 21767456,
+      "sha256": "c991c267d0f630c0cb7a85d45c6f67bb89718cafa15e78a4a21d137b6b98fa1e"
     },
     "tools/history_f411/build_debug_guide.py": {
       "bytes": 41209,

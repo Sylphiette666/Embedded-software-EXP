@@ -1,42 +1,42 @@
 {
   "method": "Unicorn executes actual Keil AXF; GPIO/UART and OLED I2C/GDDRAM modelled; time and IRQ entry injected; only OLED_BusDelay pure CPU delay skipped.",
   "physical_hardware_test": false,
-  "checked_at": "2026-10-13 14:32:08",
+  "checked_at": "2026-10-13 16:46:45",
   "tests": [
     {
       "test": "register_initialization_and_systick_wrap",
       "passed": true,
-      "seconds": 0.009
+      "seconds": 0.007
     },
     {
       "test": "polling_bounce_hold_mutual_exclusion_and_simultaneous_keys",
       "passed": true,
-      "seconds": 0.075
+      "seconds": 0.077
     },
     {
       "test": "debounce_uint32_rollover",
       "passed": true,
-      "seconds": 0.032
+      "seconds": 0.034
     },
     {
       "test": "two_exti_inputs_and_bounce",
       "passed": true,
-      "seconds": 0.098
+      "seconds": 0.093
     },
     {
       "test": "uart_commands_ring_wrap_and_overflow_recovery",
       "passed": true,
-      "seconds": 0.028
+      "seconds": 0.026
     },
     {
       "test": "lab8_oled_while_blinking_stop_and_rollover",
       "passed": true,
-      "seconds": 3.246
+      "seconds": 2.975
     },
     {
       "test": "periodic_outputs_labs_1_7_and_initial_outputs_2_3",
       "passed": true,
-      "seconds": 0.117
+      "seconds": 0.113
     },
     {
       "test": "shared_exti_vector_simultaneous_pending_bits",
@@ -45,13 +45,13 @@
     }
   ],
   "images_sha256": {
-    "Build\\Keil_01_Platform\\01_Platform.axf": "dce5b4c7fae7d44ef08a944d2f83319d6d7f73791239b460ff868eed7e55faa7",
-    "Build\\Keil_02_Register\\02_Register.axf": "8faa281c8dc3a8dc99bb0ecf4fda5104780afcea7f9257ea71fb8a1c655f10fb",
-    "Build\\Keil_03_StdPeriph\\03_StdPeriph.axf": "94d042399bcc743f09a4ea84c51cf272c62075f7c87fd549e4d360c45871097c",
-    "Build\\Keil_04_Keys\\04_Keys.axf": "3cc8712a02191d88739d2fd00e09c67543ba81131815d8fa145925ddf73336e6",
-    "Build\\Keil_05_EXTI\\05_EXTI.axf": "e4e2c84ca615f73fc3e9b6369f2d18fbf5462f18bedaa1be698c958504880bd0",
-    "Build\\Keil_06_USART\\06_USART.axf": "8bfbaebbbdfc41e0cf5be75a73bb42e80afa4a08545e4913e6f406e648dc8c0a",
-    "Build\\Keil_07_SysTick\\07_SysTick.axf": "452ffbc1ee5a61bbe50cbed1fa563fe6aeadf0087a22e11836d1cd7551caed6e",
-    "Build\\Keil_08_Application\\08_Application.axf": "f7094364feee67977566cf0b4e57d2bdb39ab7fa2f6dbadcf3de62e11343c783"
+    "Build\\Keil_01_Platform\\01_Platform.axf": "8ddee4290a9e42498c19aeffb7ca83dd8469253df7796419bc60444049b0cad9",
+    "Build\\Keil_02_Register\\02_Register.axf": "cd757acce16c770aae7342d0231710c9205e042a91e25f9f61ae8e71632ab990",
+    "Build\\Keil_03_StdPeriph\\03_StdPeriph.axf": "ffb9d9d38c5e5e60bb645fbfc98491e3837fcda82b0b481e97b1c7d1fb694092",
+    "Build\\Keil_04_Keys\\04_Keys.axf": "57e4d81248feb82ed6f25ca1f1818c99ef1b109a0ddaa9b9c235c9d770fd6d0d",
+    "Build\\Keil_05_EXTI\\05_EXTI.axf": "71ede724bc2a7447dc3ca2f5739aa7dce5cbee1de2f22ee5348009b1bd17fe2d",
+    "Build\\Keil_06_USART\\06_USART.axf": "ad24f842d96650617585c395e6162fa485765b7f107913595d57bf519da0156a",
+    "Build\\Keil_07_SysTick\\07_SysTick.axf": "dc1d4db47868ee9ee147d2e7669ede2900173c59ea914c6fc1e1d8eda5bd869b",
+    "Build\\Keil_08_Application\\08_Application.axf": "1e4baeb31a53bcddd9c89b924015c8708ce86711dd8318736265494245db2e4e"
   }
 }

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-13",
+  "baseline_commit": "4a35a53e7764dd7f7bf6e6c602ff13fc45c00651",
+  "targets": {
+    "01_Platform": {
+      "unchanged": true,
+      "sha256": "617ceb0e3683c4efb74611ef9399750fee7b05736984b25072caff310cef83ab"
+    },
+    "02_Register": {
+      "unchanged": true,
+      "sha256": "67bef9b6c51c643224480c53e95a35d91582f501f8bf4ab38cbd1a9a10d72819"
+    },
+    "03_StdPeriph": {
+      "unchanged": true,
+      "sha256": "e9dc1ace52291182d5c39b2838fcdd46546ecc6e911410918ff46c60cf23a6ea"
+    },
+    "04_Keys": {
+      "unchanged": true,
+      "sha256": "a5e3066a7c5e2f08b3ab4ef2ca0cd9864fa450a741b812080af0e568346bbe8f"
+    },
+    "05_EXTI": {
+      "unchanged": true,
+      "sha256": "540be6b24f3514129ad237056b427a471628d325e28b780c5d3630764465eed6"
+    },
+    "06_USART": {
+      "unchanged": true,
+      "sha256": "b38390baa101f25c822ec780a8ec15660381a978eef02f7b15bb98f7b85e93fe"
+    },
+    "07_SysTick": {
+      "unchanged": true,
+      "sha256": "09b6c1083f7b5f35b9f349a64eea72623b1adea94e58867419a425779af87d14"
+    },
+    "08_Application": {
+      "unchanged": false,
+      "sha256": "2ec576a26d9fe8268de12b5eb21ae17e0df704d31e9ba9c4c3cab1b658b47f1f"
+    }
+  }
+}

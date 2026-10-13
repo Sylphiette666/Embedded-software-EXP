@@ -3,3 +3,16 @@ __pycache__/
 ~$*
 .env
 .venv/
+
+# Keil intermediate objects and local UI state
+F103_Labs/Build/**/*.o
+F103_Labs/Build/**/*.d
+F103_Labs/Build/**/*.dep
+F103_Labs/Build/**/*.lst
+F103_Labs/Build/**/*.lnp
+F103_Labs/Build/**/*.htm
+F103_Labs/MDK/*.uvguix.*
+F103_Labs/MDK/*.uvprojx.bak
+F103_Labs/MDK/*.uvoptx.bak
+F103_Labs/MDK/DebugConfig/
+F103_Labs/MDK/RTE/

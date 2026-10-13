@@ -906,6 +906,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>
@@ -1821,6 +1822,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>
@@ -2736,6 +2738,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>
@@ -3651,6 +3654,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>
@@ -4566,6 +4570,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>
@@ -5481,6 +5486,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>
@@ -6396,6 +6402,7 @@
               <FileName>oled.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Labs\08_Application\oled.c</FilePath>
+              <FileOption><CommonProperty><IncludeInBuild>0</IncludeInBuild></CommonProperty></FileOption>
             </File>
             <File>
               <FileName>oled.h</FileName>

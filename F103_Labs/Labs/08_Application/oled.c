@@ -3,15 +3,16 @@
  * https://cdn.sparkfun.com/assets/d/a/a/b/c/SSD1306_datasheet.pdf
  *
  * No HAL, dynamic allocation, interrupt calls, or millisecond-tick waits.
- * This file only drives PB10/PB11 and the OLED framebuffer. Call its public
+ * This file only drives PB6/PB7 and the OLED framebuffer. Call its public
  * drawing/service functions from the main loop, never from an interrupt.
  */
 #include "platform.h"
 #include "oled.h"
 #include "oled_font.h"
 
-#define OLED_SCL_PIN              GPIO_Pin_10
-#define OLED_SDA_PIN              GPIO_Pin_11
+/* Puzhong Jingling OLED socket: SCL=PB6, SDA=PB7. */
+#define OLED_SCL_PIN              GPIO_Pin_6
+#define OLED_SDA_PIN              GPIO_Pin_7
 #define OLED_LINE_WAIT_LIMIT      32u
 #define OLED_POWER_SETTLE_STEPS   20000u
 #define OLED_WIDTH                128u

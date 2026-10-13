@@ -7,10 +7,11 @@ int main(void)
     Keys_EnableEXTI(KEY0_EVENT | KEY1_EVENT);
     Print_Banner(8, "Two-key experiment with I2C OLED");
     UART_Puts("K1 toggles blink. K4 displays Chinese on OLED.\r\n");
+    UART_Puts("OLED board socket: SCL=PB6 SDA=PB7.\r\n");
     if (OLED_Init()) {
         UART_Puts("OLED SSD1306 init ACK; confirm image on screen.\r\n");
     } else {
-        UART_Puts("OLED offline: check power, PB10/PB11, model; reset after repair.\r\n");
+        UART_Puts("OLED offline: check power, SCL=PB6/SDA=PB7, model; reset after repair.\r\n");
     }
     uint8_t blink_enabled = 0u;
     uint32_t last = Time_Now();

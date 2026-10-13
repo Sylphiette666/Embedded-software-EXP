@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-13 14:26:05",
+  "checked_at": "2026-10-13 16:46:35",
   "results": [
     {
       "target": "01_Platform",
@@ -90,7 +90,7 @@
       "target": "08_Application",
       "passed": true,
       "main": "Labs\\08_Application\\main.c",
-      "flash_section_bytes": 9416,
+      "flash_section_bytes": 9400,
       "ram_section_bytes": 2248,
       "vector_handlers": [
         "SysTick_Handler",
@@ -112,12 +112,12 @@
     "Labs\\05_EXTI\\main.c": "beb89506338b2ea9d8a69b27630600e837bd425fe3d049ac311411527de6deeb",
     "Labs\\06_USART\\main.c": "9a1c3bb7c30eae061269ce6f6a9d7d182971b654c4494f4c0dc6b40ae130bbdf",
     "Labs\\07_SysTick\\main.c": "e43239114dcedf4c79134efccce401bb158c857417791ad4ce97bdb572aef8f8",
-    "Labs\\08_Application\\main.c": "46f27231d4579ca0a5f322c920f927fd098e7be19ced9738cc510c6cbd6cf4f6",
-    "Labs\\08_Application\\oled.c": "6e2c392a5749777e3aeb62bb324e42b3f7b60517d753282d37918e775ceebbd5",
-    "Labs\\08_Application\\oled.h": "36ffbf236827f876deee4d4713cfb6d3ac85611a6230db6133c6be9a1730e170",
+    "Labs\\08_Application\\main.c": "ec8fe54c3a84760006d2b19b0d3a352a500ca88b116eadccd4a567e4c9f25c37",
+    "Labs\\08_Application\\oled.c": "94dfb3c7a4f760b3079264a8ae553098925533167ab359c89b8bb8706320ff17",
+    "Labs\\08_Application\\oled.h": "cb0abcaa3aaad46ccc015b99e087ca34dd58f98c90d50b5d9f12c753a919a639",
     "Labs\\08_Application\\oled_font.h": "15935ab0023948831f123259e6a00f194ad47e03035ed6108c3fb138a8865355",
-    "MDK\\F103_Labs.uvoptx": "573cbf8cb2c1277d7b2cbafb0be8214014c41ca884a122062439c1f1f5bc84e2",
-    "MDK\\F103_Labs.uvprojx": "03b1561f1db2fff11c5bb65313566c3752fefdf40f9f4196d7f16044a27f0a3b",
+    "MDK\\F103_Labs.uvoptx": "fddfe69b4530459a616f5dc24ab1ce43808ed64821c2d82f697b6318b8cb75c1",
+    "MDK\\F103_Labs.uvprojx": "c6cc46c52103aceb7b095ec7b6d8bb95ca774dd743cf038bbf38d4940d50b106",
     "MDK\\flash.sct": "77c32897a8ad3047bd1290aa2b3aa9c50234ff5658889b9b446a2dfeafed96bc",
     "Vendor\\CMSIS5_Core\\cmsis_armcc.h": "5bc0d7ed8e36e9bcb868c4042fff350c702eca305df4162fb00384789e35ee1c",
     "Vendor\\CMSIS5_Core\\cmsis_armclang.h": "d5da2b48204f0d0cf1ff38ffccb527e5706cd0a091ff0a331eb41d6596c33fe5",

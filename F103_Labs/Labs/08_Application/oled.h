@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 /* Assumed module: SSD1306, 128x64, 4-wire I2C, 3.3 V.
- * PB10=SCL, PB11=SDA. Both pins are open-drain and require external
+ * Board OLED socket: PB6=SCL, PB7=SDA. Both pins are open-drain and require external
  * pull-ups to 3.3 V (normally already fitted on the OLED module).
  * This driver probes 7-bit address 0x3C, then 0x3D; no device-ID read is
  * available, so ACK alone does not establish the controller model.

@@ -238,7 +238,7 @@ def initialization_checks(address):
     bus=m.oled_bus
     assert u8(m,'g_oled_present')==1 and u8(m,'g_oled_address')==address
     assert m.variable('g_oled_error_count')==0
-    assert (m.r32(GPIOB+4)>>8)&0xFF==0x66,'PB10/PB11 must be 2 MHz open-drain outputs'
+    assert (m.r32(GPIOB)>>24)&0xFF==0x66,'PB6/PB7 must be 2 MHz open-drain outputs'
     assert m.r32(0x40021018)&8,'GPIOB clock disabled'
     assert bus.command_bytes==EXPECTED_INIT,bus.command_bytes
     probes=[t for t in bus.transactions if len(t['bytes'])==1]
