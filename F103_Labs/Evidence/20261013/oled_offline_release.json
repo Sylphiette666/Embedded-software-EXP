@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-13",
+  "change": "Experiment 8 now uses I2C OLED; experiments 1-7 HEX byte-identical",
+  "assumed_module": "SSD1306 128x64, 3.3V I2C; controller and resolution unconfirmed",
+  "wiring": {
+    "GND": "GND",
+    "VCC": "3V3",
+    "SCL/SCK": "PB10",
+    "SDA": "PB11"
+  },
+  "physical_hardware_test": false,
+  "download_performed": false,
+  "oled_display_observed": false,
+  "keil_targets_passed": 8,
+  "project_targets_passed": 8,
+  "logic_groups_passed": 8,
+  "oled_groups_passed": 8,
+  "evidence": {
+    "Build/keil_results.json": "cded504e312bc17abbe688e724af31e999fa59f4fa8e703f8abec37cbc09c879",
+    "Build/project_check_results.json": "d03aa87a3a07ed0052a8b83fb858452acd089429fe019bcc2b7f687958fda23d",
+    "Build/logic_check_results.json": "bb7671178a70278cb984aeb1e84b167b0ad4cf5e5a9be5daa2ddbaadd2e64519",
+    "Build/oled_logic_check_results.json": "b63c5088fe94fe063c6e0644227042fb96b79b24439d33c37a028328e595e151",
+    "Build/oled_change_hex_comparison.json": "5e88372dd50a69f5271195134e5be7b924a960c187bb1f916e52820d00b3e013"
+  },
+  "source_files": {
+    "Labs\\08_Application\\main.c": "46f27231d4579ca0a5f322c920f927fd098e7be19ced9738cc510c6cbd6cf4f6",
+    "Labs\\08_Application\\oled.c": "6e2c392a5749777e3aeb62bb324e42b3f7b60517d753282d37918e775ceebbd5",
+    "Labs\\08_Application\\oled.h": "36ffbf236827f876deee4d4713cfb6d3ac85611a6230db6133c6be9a1730e170",
+    "Labs\\08_Application\\oled_font.h": "15935ab0023948831f123259e6a00f194ad47e03035ed6108c3fb138a8865355"
+  },
+  "limitations": [
+    "Pure OLED_BusDelay bypassed only in emulation.",
+    "GPIO bus, device memory, ticks and key IRQ entry are modelled.",
+    "Actual pixel orientation, supply, pull-ups and waveform require board verification.",
+    "Old PC display source and physical records are preserved separately."
+  ]
+}

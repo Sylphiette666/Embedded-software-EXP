@@ -1,0 +1,59 @@
+# 普中精灵 STM32F103C8T6 完整开发板实验工程
+
+## 入口
+- Keil 工程：D:\MDK5\F103_Labs\MDK\F103_Labs.uvprojx
+- Word：D:\Work\嵌入式实验\普中精灵F103_八项实验详细调试流程.docx
+- 桌面“STM32实验工具”已切换至 D:\F103_LabTools\启动入口。
+- F411 原工程保留在 D:\MDK5\F411_Labs，其旧文档不适用于本板。
+
+## 本板接线
+LED0=底板D1/PA0，LED1=底板D2/PA1，均低电平亮。
+KEY0=K1/PA15，KEY1=K4/PA12，均按下接地、上拉输入。
+K2/PA14 和 K3/PA13 留给 SWD，不参与本工程。
+板载 USART1：PA9 TX、PA10 RX；P4 短接 A9–UR、A10–UT。
+底板 USB1 为 CH340 USB 转串口，核心板 USB 口不是本工程串口口。
+J11 短接以启用 LED；J1 接 VCC 侧禁用点阵输出。改跳线前先断电。
+正常运行 BOOT0=0、BOOT1=0。USB1 供电时，下载器按其说明连接电压参考，避免再接另一电源输出。
+
+## 软件
+Keil 5.43.1 / Arm Compiler 6.24；F1 DFP 2.4.1 已安装。
+工程随附 STM32F1 SPL 和 CMSIS 5.9，时钟采用 ST 系统文件：8 MHz HSE、PLL x9、HCLK 72 MHz、APB1 36 MHz。
+Tera Term：D:\TeraTerm\ttermpro.exe，115200/8N1/无流控/UTF-8。
+FlyMCU：D:\FlyMCU\FlyMcu.exe，用于串口 ISP。串口需先从 Tera Term 断开。
+CH340 驱动已在 Windows 驱动库中：oem46.inf，3.9.2024.9，微软有效签名；备份 D:\CH340_Driver\Installed_Driver_Backup。
+复用已安装的 D:\F411_PythonEnv\Scripts\python.exe 进行离线校验，目录名沿用旧名，校验对象已改为 F103。
+STM32CubeProgrammer 尚未安装（ST 官网下载未成功），此 SPL 工程可以用 Keil/ST-Link 和 FlyMCU/ISP 完成，无需 CubeMX、CubeIDE 或 Proteus。
+
+## 编译与下载
+在 Keil 左上 Target 选择 01 至 08 对应实验，Project → Rebuild all target files。
+输出：Build\Keil_<Target>\<Target>.hex。每个 HEX 仅对应一个实验。
+ST-Link 为默认调试器，端口 SW，时钟 1 MHz；算法 STM32F10x_128.FLM 支持中容量器件，工程限制仍为64 KB。
+若实际下载器是 CMSIS-DAP，需要在 Debug 和 Utilities 中选择 CMSIS-DAP 并配置 SWD；它不能代替指导书中点名要求的 ST-Link 验收。
+FlyMCU 手动 ISP：BOOT0=1、BOOT1=0，复位后下载 HEX，校验成功，再恢复 BOOT0=0 并复位。
+本次未执行任何开发板下载或擦除。
+
+## 验证状态
+八个目标 Keil 全量编译均为0错误0警告，内存范围与中断向量检查通过。
+八组软件回归通过：实际AXF在Unicorn中执行，GPIO/UART为模型、时间与中断由测试注入。
+实验2/3检查初始化输出；实验1/7检查周期输出；不代替晶振、真实中断时序、USB、下载器和板上按键实测。
+记录位于 Build/keil_results.json、project_check_results.json、logic_check_results.json。
+只编译及校验：powershell -ExecutionPolicy Bypass -File D:\F103_LabTools\check_environment.ps1
+打开串口：powershell -ExecutionPolicy Bypass -File D:\F103_LabTools\open_serial.ps1
+多个串口时在命令末尾加 -Port COMn，按设备管理器实际端口填写。
+
+## 八个实验
+01_Platform：D1 每500 ms翻转，串口输出启动信息及状态。
+02_Register：寄存器控制 D1/D2 交替，每500 ms换向。
+03_StdPeriph：标准库控制 D1 亮1 s、灭1 s。
+04_Keys：K1同时反转两灯；K4依次产生10、01互斥状态。
+05_EXTI：K1中断翻转D1，K4中断翻转D2，共用EXTI15_10入口。
+06_USART：大写Y开D1、大写N关D1；其他字符不改变LED，?附加查询状态。
+07_SysTick：1 ms节拍，D1每1000 ms翻转（完整亮灭周期2 s）。
+08_Application：K1启停D1闪烁；K4中断触发PC端显示“嵌入式实验完成啦”。
+
+## 资料依据
+用户实验指导书及课设中保存的普中精灵完整板商品图。
+普中官方板卡使用说明：https://blog.csdn.net/2501_92850798/article/details/149668892
+普中官方按键说明：https://blog.csdn.net/2501_92850798/article/details/150204565
+普中官方点阵与J1/J11说明：https://blog.csdn.net/2501_92850798/article/details/150260376
+CMSIS 5.9：https://github.com/ARM-software/CMSIS_5/tree/5.9.0

@@ -1,0 +1,82 @@
+[
+  {
+    "target": "01_Platform",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:19:38.752007+08:00",
+    "axf_sha256": "dce5b4c7fae7d44ef08a944d2f83319d6d7f73791239b460ff868eed7e55faa7",
+    "hex_sha256": "617ceb0e3683c4efb74611ef9399750fee7b05736984b25072caff310cef83ab",
+    "bin_sha256": "c6086f176e986a30a3804433e984cc22f27d9ee6eaaa0747139339be4584ce2d"
+  },
+  {
+    "target": "02_Register",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:19:51.683330+08:00",
+    "axf_sha256": "8faa281c8dc3a8dc99bb0ecf4fda5104780afcea7f9257ea71fb8a1c655f10fb",
+    "hex_sha256": "67bef9b6c51c643224480c53e95a35d91582f501f8bf4ab38cbd1a9a10d72819",
+    "bin_sha256": "8cac4d13bbb111d43f20eee7ed8846754d274fbcc6f6b0e54c43cbba31953125"
+  },
+  {
+    "target": "03_StdPeriph",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:19:55.294243+08:00",
+    "axf_sha256": "94d042399bcc743f09a4ea84c51cf272c62075f7c87fd549e4d360c45871097c",
+    "hex_sha256": "e9dc1ace52291182d5c39b2838fcdd46546ecc6e911410918ff46c60cf23a6ea",
+    "bin_sha256": "b62bbbf87da2960a08686a6e8dcd9b91a1a46d1ecfac6e64bcdba20f0133e022"
+  },
+  {
+    "target": "04_Keys",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:19:58.776048+08:00",
+    "axf_sha256": "3cc8712a02191d88739d2fd00e09c67543ba81131815d8fa145925ddf73336e6",
+    "hex_sha256": "a5e3066a7c5e2f08b3ab4ef2ca0cd9864fa450a741b812080af0e568346bbe8f",
+    "bin_sha256": "4ec6b0444dba2c852920fac3714d975f5b2c071eef01046278aa0eeb1abfc2ee"
+  },
+  {
+    "target": "05_EXTI",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:20:01.700718+08:00",
+    "axf_sha256": "e4e2c84ca615f73fc3e9b6369f2d18fbf5462f18bedaa1be698c958504880bd0",
+    "hex_sha256": "540be6b24f3514129ad237056b427a471628d325e28b780c5d3630764465eed6",
+    "bin_sha256": "6de812941c43393cc8e4b763fc5fda0165014a62d0c151b736f4a642d0b900d1"
+  },
+  {
+    "target": "06_USART",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:20:04.645006+08:00",
+    "axf_sha256": "8bfbaebbbdfc41e0cf5be75a73bb42e80afa4a08545e4913e6f406e648dc8c0a",
+    "hex_sha256": "b38390baa101f25c822ec780a8ec15660381a978eef02f7b15bb98f7b85e93fe",
+    "bin_sha256": "d57b06b747366908e20f583f5df4f86b2d2844f40e35afe87098f5f67d92443b"
+  },
+  {
+    "target": "07_SysTick",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:20:07.482833+08:00",
+    "axf_sha256": "452ffbc1ee5a61bbe50cbed1fa563fe6aeadf0087a22e11836d1cd7551caed6e",
+    "hex_sha256": "09b6c1083f7b5f35b9f349a64eea72623b1adea94e58867419a425779af87d14",
+    "bin_sha256": "683895c6b94954ad8e528d660f0cc00cafb5bb76ec03a26d069553b6c0473afd"
+  },
+  {
+    "target": "08_Application",
+    "exit_code": 0,
+    "passed": true,
+    "build_mode": "rebuild",
+    "started_at": "2026-10-13T14:20:10.520316+08:00",
+    "axf_sha256": "f7094364feee67977566cf0b4e57d2bdb39ab7fa2f6dbadcf3de62e11343c783",
+    "hex_sha256": "b6a6e89848f70bc9da50ef7112b297786d30b6e3f06dbe510f682583f836421d",
+    "bin_sha256": "e89b7cbd46ed03c75b1575bf13e8612410290bd6401c707a57676a3cfcef33aa"
+  }
+]

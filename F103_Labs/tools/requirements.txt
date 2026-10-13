@@ -1,0 +1,5 @@
+unicorn==2.1.4
+pyelftools==0.32
+pyserial==3.5
+intelhex==2.3.0
+pyocd==0.45.1

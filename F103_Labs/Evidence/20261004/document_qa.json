@@ -1,0 +1,14 @@
+{
+  "document": "D:\\Work\\嵌入式实验\\普中精灵F103_上板验证与源码调试流程_20261004.docx",
+  "sha256": "0ded7ba21815333d820c285bbc8f662a2ad1802380115ab1643b37413435d337",
+  "pages": 25,
+  "all_pages_visually_reviewed": true,
+  "renderer": "Isolated Microsoft Word COM export then bundled pypdfium2 PNG rendering",
+  "packaged_renderer_limitation": "soffice.exe not installed; render_docx.py failure diagnosed",
+  "checks": [
+    "No clipping or overlap",
+    "No blank or isolated short-tail pages",
+    "Eight full main.c appendices match source hashes"
+  ],
+  "hardware_scope": "Partial verification; see validation_summary.json"
+}

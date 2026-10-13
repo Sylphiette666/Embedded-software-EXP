@@ -1,0 +1,25 @@
+{
+  "pid": "0x0410",
+  "bootloader_version": "2.2",
+  "supported_commands": [
+    "0x00",
+    "0x01",
+    "0x02",
+    "0x11",
+    "0x21",
+    "0x31",
+    "0x43",
+    "0x63",
+    "0x73",
+    "0x82",
+    "0x92"
+  ],
+  "flash_kib": 64,
+  "uid": "35ff6f064d58303838561543",
+  "created_at": "2026-10-04T16:18:09.049604+08:00",
+  "address": 134217728,
+  "length": 65536,
+  "sha256": "7e4329dfe6982dab1d38ecf91a358171af7b4e964d79af484490e29dbdd5da39",
+  "binary": "20261004_161809_048688_preflash_07_SysTick_08000000.bin",
+  "purpose": "preflash_07_SysTick"
+}

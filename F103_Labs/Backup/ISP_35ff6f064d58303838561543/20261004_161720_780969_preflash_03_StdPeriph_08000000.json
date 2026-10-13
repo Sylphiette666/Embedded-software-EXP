@@ -1,0 +1,25 @@
+{
+  "pid": "0x0410",
+  "bootloader_version": "2.2",
+  "supported_commands": [
+    "0x00",
+    "0x01",
+    "0x02",
+    "0x11",
+    "0x21",
+    "0x31",
+    "0x43",
+    "0x63",
+    "0x73",
+    "0x82",
+    "0x92"
+  ],
+  "flash_kib": 64,
+  "uid": "35ff6f064d58303838561543",
+  "created_at": "2026-10-04T16:17:20.782292+08:00",
+  "address": 134217728,
+  "length": 65536,
+  "sha256": "05cdd71a7aec9ea139b8a5d500f59e40733d6ef47f7cd163bc95666f34e28966",
+  "binary": "20261004_161720_780969_preflash_03_StdPeriph_08000000.bin",
+  "purpose": "preflash_03_StdPeriph"
+}

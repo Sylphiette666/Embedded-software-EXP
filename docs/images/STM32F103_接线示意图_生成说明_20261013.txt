@@ -1,0 +1,43 @@
+工具：内置 image_gen 图像生成工具
+用途：STM32F103 完整实验板接线示意，按信号名称连接，不代表实际器件位置或下载器针序。
+
+Create a precise high-resolution Chinese educational wiring infographic, landscape 3:2, clean white background, flat vector-like technical illustration, large extremely legible Chinese typography, generous spacing. This is a signal-name wiring diagram, NOT a claim about the physical pin positions of an unidentified ST-Link. It teaches a novice how to connect an independent ST-Link USB debugger to a Puzhong Jingling complete STM32F103C8T6 development board, leaving the small core board mounted on its large baseboard.
+
+Title: “STM32F103 实验板接线图”
+Subtitle: “核心板留在底板上 · 断电接线，接好再通电”
+Small visible qualification: “按丝印名称接线，图中位置仅作示意”
+
+Main diagram occupies upper 65%:
+A computer icon at the top. A separate independent ST-Link device on left, a large blue complete experiment baseboard on right with a clearly nested smaller blue core board marked “STM32F103C8T6 核心板（不用拔下）”.
+Show TWO separate USB cables from the computer, each explicitly labeled:
+1 “USB 数据线 ①” goes to ST-Link's USB.
+2 “USB 数据线 ②” goes to the LARGE BASEBOARD USB port next to a small CH340 chip; label that connection “底板 CH340 旁 USB：供电＋串口”.
+The core board's own USB port is visible but disconnected, caption “核心板 USB 本次不接”.
+Label the left device “独立 ST-Link 下载器”.
+Below its device title say “以下按信号名称示意，并非实际针序”.
+
+Draw exactly FOUR clear horizontal signal connections with matching labels at both ends, no junctions or ambiguous crossings, in the following vertical order. The left ST-Link connector label and right CORE BOARD label must be at exactly the same height:
+top: left “VTref / VAPP” → right “3V3”, ORANGE DASHED LINE, with prominent label “仅确认是电压检测输入时连接”.
+second: left “SWDIO” → right “DIO / PA13”, solid BLUE line, label “必接”.
+third: left “GND” → right “GND”, solid BLACK line, label “必接”.
+fourth: left “SWCLK” → right “CLK / PA14”, solid GREEN line, label “必接”.
+All four endpoints on the right must clearly belong to the CORE board, not a USB connector or LED. Do not draw a power-output connection from the ST-Link. Add small text below the left device: “3.3V / 5V 电源输出：本图不连接”.
+Below main connections add plain text “可选复位线：ST-Link NRST → 板上 RST / NRST”.
+
+Lower 35% is two clean separated instructional regions, still generous type:
+Left region titled “板上跳帽”
+Five exact rows:
+“BOOT0 / B0：GND 侧”
+“BOOT1 / B1：GND 侧”
+“P4：A9—UR，A10—UT”
+“J11：短接”
+“J1：中间针与 VCC 侧针短接”
+These are textual settings, do not invent physical locations for these jumpers.
+
+Right region titled “使用板载器件”
+“LED：D1 / PA0，D2 / PA1”
+“按键：K1 / PA15，K4 / PA12”
+“K2、K3 占用 SWD 引脚，调试时不要按”
+At bottom a highly legible amber note: “下载器若只标 3.3V / 5V，先发引脚照片确认，勿当作 VTref 直接连接。”
+
+Accuracy constraints: GND must connect only GND; SWDIO only DIO/PA13; SWCLK only CLK/PA14. Never show VAPP as a supply output. Never connect 5V to any core 3V3 pin. Do not confuse BOOT1 with a pushbutton. Do not invent a literal numbered pinout for the user's unknown ST-Link. No photorealism, no excessive fake components, no decorative clutter, no other boards such as Nucleo, no extra cables. All important labels must be readable and spelled exactly as specified.

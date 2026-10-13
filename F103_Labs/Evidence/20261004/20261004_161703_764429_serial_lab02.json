@@ -1,0 +1,247 @@
+{
+  "started_at": "2026-10-04T16:17:03.764+08:00",
+  "timezone": "UTC+08:00",
+  "status": "SERIAL_REPORT_CHECKS_PASSED",
+  "requested_lab": 2,
+  "port": "COM4",
+  "duration_seconds": 8.0,
+  "serial_settings": "115200 8N1, no flow control, DTR=False and RTS=False before open",
+  "actual_hardware": true,
+  "actual_hardware_serial_data_received": true,
+  "reset_performed": false,
+  "download_performed": false,
+  "GPIO_or_IRQ_injection": false,
+  "evidence_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.json",
+  "raw_serial_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.serial.raw",
+  "timestamped_serial_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.serial.jsonl",
+  "script_sha256": "acf4d502b5d5251a32047c7a6503ffdd108360e4e6f405b7e376d338472ed926",
+  "lines": [
+    {
+      "at": "2026-10-04T16:17:04.230+08:00",
+      "seconds": 0.45283,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:04.731+08:00",
+      "seconds": 0.953727,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:05.231+08:00",
+      "seconds": 1.452939,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:05.732+08:00",
+      "seconds": 1.954751,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:06.237+08:00",
+      "seconds": 2.459302,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:06.731+08:00",
+      "seconds": 2.953151,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:07.234+08:00",
+      "seconds": 3.456387,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:07.734+08:00",
+      "seconds": 3.956273,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:08.240+08:00",
+      "seconds": 4.462695,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:08.734+08:00",
+      "seconds": 4.956527,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:09.236+08:00",
+      "seconds": 5.458525,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:09.740+08:00",
+      "seconds": 5.962425,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:10.244+08:00",
+      "seconds": 6.466269,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:10.738+08:00",
+      "seconds": 6.960709,
+      "text": "LED0=1 LED1=0"
+    },
+    {
+      "at": "2026-10-04T16:17:11.246+08:00",
+      "seconds": 7.468331,
+      "text": "LED0=0 LED1=1"
+    },
+    {
+      "at": "2026-10-04T16:17:11.745+08:00",
+      "seconds": 7.967306,
+      "text": "LED0=1 LED1=0"
+    }
+  ],
+  "reported_states": [],
+  "transmissions": [],
+  "command_checks": [],
+  "errors": [],
+  "cleanup_errors": [],
+  "limitations": [
+    "LED state in STATE is firmware ODR readback, not direct pin measurement.",
+    "Lab 2/3 logs report intended actions and cannot prove electrical outputs.",
+    "Physical LED illumination requires user observation.",
+    "Host-clock timing is coarse; no claim of calibrated 1 ms accuracy."
+  ],
+  "local_artifacts_not_device_readback": {
+    "hex": {
+      "file": "D:\\MDK5\\F103_Labs\\Build\\Keil_02_Register\\02_Register.hex",
+      "sha256": "67bef9b6c51c643224480c53e95a35d91582f501f8bf4ab38cbd1a9a10d72819"
+    },
+    "axf": {
+      "file": "D:\\MDK5\\F103_Labs\\Build\\Keil_02_Register\\02_Register.axf",
+      "sha256": "d0f98bb61a3992402c16af7e500880a0d580272882f056543bd45c57e789a9e5"
+    }
+  },
+  "elapsed_seconds": 8.001,
+  "command_sequence_complete": null,
+  "checks": [
+    {
+      "name": "UART_response_received",
+      "passed": true
+    },
+    {
+      "name": "coarse_serial_report_alternation",
+      "expected_seconds": 0.5,
+      "host_intervals_seconds": [
+        0.499212,
+        0.5018119999999999,
+        0.5045510000000002,
+        0.493849,
+        0.5032359999999998,
+        0.49988600000000005,
+        0.5064220000000001,
+        0.49383200000000027,
+        0.5019979999999995,
+        0.5038999999999998,
+        0.503844,
+        0.49444,
+        0.5076220000000005,
+        0.4989749999999997
+      ],
+      "host_mean_seconds": 0.5009699285714285,
+      "reported_changes": [
+        [
+          0.45283,
+          0,
+          null
+        ],
+        [
+          0.953727,
+          1,
+          null
+        ],
+        [
+          1.452939,
+          0,
+          null
+        ],
+        [
+          1.954751,
+          1,
+          null
+        ],
+        [
+          2.459302,
+          0,
+          null
+        ],
+        [
+          2.953151,
+          1,
+          null
+        ],
+        [
+          3.456387,
+          0,
+          null
+        ],
+        [
+          3.956273,
+          1,
+          null
+        ],
+        [
+          4.462695,
+          0,
+          null
+        ],
+        [
+          4.956527,
+          1,
+          null
+        ],
+        [
+          5.458525,
+          0,
+          null
+        ],
+        [
+          5.962425,
+          1,
+          null
+        ],
+        [
+          6.466269,
+          0,
+          null
+        ],
+        [
+          6.960709,
+          1,
+          null
+        ],
+        [
+          7.468331,
+          0,
+          null
+        ],
+        [
+          7.967306,
+          1,
+          null
+        ]
+      ],
+      "passed": true,
+      "scope": "Hard-coded intent log, no independent GPIO evidence.",
+      "timing_limit": "PC serial arrivals / 200 ms polling are coarse; not calibrated instrument timing."
+    }
+  ],
+  "startup_lab_numbers_observed": [],
+  "firmware_identity_limitation": "No reset, Flash readback, UID read or hash verification is performed by this script. Connect this evidence to the separate ISP/SWD download record. A startup banner may be missed.",
+  "serial_checks_passed": true,
+  "overall_experiment_passed": null,
+  "electrical_pin_validation": "NOT_PERFORMED",
+  "visible_LED_validation": "USER_OBSERVATION_REQUIRED",
+  "serial_rx_bytes": 240,
+  "serial_rx_sha256": "a2cb8dc2b523649367171f243df0a56edcdf3ff935b814ced920a378f5eadcfd",
+  "serial_text": "LED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\nLED0=0 LED1=1\r\nLED0=1 LED1=0\r\n",
+  "trailing_partial_line": "",
+  "finished_at": "2026-10-04T16:17:11.780+08:00",
+  "exit_code": 0
+}

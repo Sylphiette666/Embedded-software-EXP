@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-10-13 14:26:05",
+  "results": [
+    {
+      "target": "01_Platform",
+      "passed": true,
+      "main": "Labs\\01_Platform\\main.c",
+      "flash_section_bytes": 4420,
+      "ram_section_bytes": 1200,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "02_Register",
+      "passed": true,
+      "main": "Labs\\02_Register\\main.c",
+      "flash_section_bytes": 2904,
+      "ram_section_bytes": 1184,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "03_StdPeriph",
+      "passed": true,
+      "main": "Labs\\03_StdPeriph\\main.c",
+      "flash_section_bytes": 2956,
+      "ram_section_bytes": 1184,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "04_Keys",
+      "passed": true,
+      "main": "Labs\\04_Keys\\main.c",
+      "flash_section_bytes": 4620,
+      "ram_section_bytes": 1200,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "05_EXTI",
+      "passed": true,
+      "main": "Labs\\05_EXTI\\main.c",
+      "flash_section_bytes": 5000,
+      "ram_section_bytes": 1200,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler",
+        "EXTI15_10_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "06_USART",
+      "passed": true,
+      "main": "Labs\\06_USART\\main.c",
+      "flash_section_bytes": 4440,
+      "ram_section_bytes": 1200,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "07_SysTick",
+      "passed": true,
+      "main": "Labs\\07_SysTick\\main.c",
+      "flash_section_bytes": 4324,
+      "ram_section_bytes": 1200,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    },
+    {
+      "target": "08_Application",
+      "passed": true,
+      "main": "Labs\\08_Application\\main.c",
+      "flash_section_bytes": 9416,
+      "ram_section_bytes": 2248,
+      "vector_handlers": [
+        "SysTick_Handler",
+        "USART1_IRQHandler",
+        "EXTI15_10_IRQHandler"
+      ],
+      "bin_matches_hex": true
+    }
+  ],
+  "inputs_sha256": {
+    "App\\platform.c": "a9715f43b12379611b23d1582bc684ba9f05de615f235dff9716e5cf6e673101",
+    "App\\platform.h": "86b1f296bed471d0d71fe7ec10634e414724255aebd9097a90759bf3e013269b",
+    "App\\stm32f10x_conf.h": "c661544775c94ba0bb5f8f1b8c6adeac9efcb2f14f30744ebca0cc0b49b086c7",
+    "App\\system_lab.c": "42599b96d5d72942db461dc39bb1fe8817dea894fa1add44dbdf7f58b91f741f",
+    "Labs\\01_Platform\\main.c": "adf43d32cfaade9af1d56b3a4ae61508c7707e2d7412473ccf1257518773099e",
+    "Labs\\02_Register\\main.c": "aa957aa53eedcea0a422e1b35c54ac588f846033f1cfa224990eabda2dfc76f7",
+    "Labs\\03_StdPeriph\\main.c": "b2182afefe89e6cac2ed76956524c5c4e27e1129837a13aeeafda0cb4069be84",
+    "Labs\\04_Keys\\main.c": "586bf59fc421c64644e01fa065e570ddbf2bedf757d671627578b4f66e83a6ae",
+    "Labs\\05_EXTI\\main.c": "beb89506338b2ea9d8a69b27630600e837bd425fe3d049ac311411527de6deeb",
+    "Labs\\06_USART\\main.c": "9a1c3bb7c30eae061269ce6f6a9d7d182971b654c4494f4c0dc6b40ae130bbdf",
+    "Labs\\07_SysTick\\main.c": "e43239114dcedf4c79134efccce401bb158c857417791ad4ce97bdb572aef8f8",
+    "Labs\\08_Application\\main.c": "46f27231d4579ca0a5f322c920f927fd098e7be19ced9738cc510c6cbd6cf4f6",
+    "Labs\\08_Application\\oled.c": "6e2c392a5749777e3aeb62bb324e42b3f7b60517d753282d37918e775ceebbd5",
+    "Labs\\08_Application\\oled.h": "36ffbf236827f876deee4d4713cfb6d3ac85611a6230db6133c6be9a1730e170",
+    "Labs\\08_Application\\oled_font.h": "15935ab0023948831f123259e6a00f194ad47e03035ed6108c3fb138a8865355",
+    "MDK\\F103_Labs.uvoptx": "573cbf8cb2c1277d7b2cbafb0be8214014c41ca884a122062439c1f1f5bc84e2",
+    "MDK\\F103_Labs.uvprojx": "03b1561f1db2fff11c5bb65313566c3752fefdf40f9f4196d7f16044a27f0a3b",
+    "MDK\\flash.sct": "77c32897a8ad3047bd1290aa2b3aa9c50234ff5658889b9b446a2dfeafed96bc",
+    "Vendor\\CMSIS5_Core\\cmsis_armcc.h": "5bc0d7ed8e36e9bcb868c4042fff350c702eca305df4162fb00384789e35ee1c",
+    "Vendor\\CMSIS5_Core\\cmsis_armclang.h": "d5da2b48204f0d0cf1ff38ffccb527e5706cd0a091ff0a331eb41d6596c33fe5",
+    "Vendor\\CMSIS5_Core\\cmsis_compiler.h": "b51963d271c1571ca3463654c76aa7ea50c4eac5d0a2710df10414ac64d9e0f8",
+    "Vendor\\CMSIS5_Core\\cmsis_gcc.h": "43bfd1fe69fbbc2ca70aaf7d43cc3e20f16e0c7f66e1bdef9b51af6dc14b2617",
+    "Vendor\\CMSIS5_Core\\cmsis_version.h": "184c19fd3ee73632edf35a0b4d49cd48be75fbf49e6ccb19d9db05fa83bea4b3",
+    "Vendor\\CMSIS5_Core\\core_cm3.h": "c9937781259a8897adf514445441c68570087d6a72a558d8a4afe75cdb62dbd2",
+    "Vendor\\CMSIS5_Core\\core_cm4.h": "f5b63d52dd1557b15ca414cb59c264f595a7b5669db2a5878dffe22f4caedc8c",
+    "Vendor\\CMSIS5_Core\\mpu_armv7.h": "29206b52ee02290ed6f5a5415ebd4187de802cf176d9b3cb844390d8e5571372",
+    "Vendor\\Device\\Include\\stm32f10x.h": "c1ad50854913946533fea40bbb028fb08a2506ca43f2d0a74484b54499f42d9a",
+    "Vendor\\Device\\Include\\system_stm32f10x.h": "94c42088cb2e8ee8cce2e4341aa66f83e47e3f05fa93ed8f2da6071205b5cd20",
+    "Vendor\\Device\\Source\\startup_stm32f10x_md.s": "620c696234a2932e4b2d7b60e128171dd18ee04fdc2196bfd02290b4a0db4b39",
+    "Vendor\\StdPeriph_Driver\\inc\\misc.h": "97d7414336a55e1fd22c5d1c1d1b7a66583d158732db3bb60c601bd9b62d55e1",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_adc.h": "ed7f95fbbac933195b6f78951c063b20c92ee7a0feaa5b3c35ffb3d1e6827875",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_bkp.h": "47c41f16d586f7d4b2097726da0e093a5fb98f2b2535d56b404cc48127bb8109",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_can.h": "3229f604e895fd510219a44cc3eca6f7c8c159cab4792579f4225704463d8ebb",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_cec.h": "a79a46e2d09d151553e11043a3ae715a7b41be17b356520da7765145eb5da2d2",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_crc.h": "c81463fbcc940a6006c39452a102b13c100531a9b5ce2ac42844aa58416bdc30",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_dac.h": "d49423ed9a83e1d8a8e1bb7c5f887b179b5270d58c6b14cab73e3e737c890979",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_dbgmcu.h": "06584fa1a80d5f6c2885a47b821e886ae80dec3b89f256cab6b82383d04856f3",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_dma.h": "18fdcd86938d2b6633df470bb5b8923649bd06a8f2b260e2f80338dd604eb689",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_exti.h": "e352d96e5f61c4e1b9281a5bd8fa60f1841d9a5870719fdecf4cfa36a7ebeff3",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_flash.h": "425dc48c22762c87e8561e42a4776dc241580c0289bb4132ba2767e4122c0edf",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_fsmc.h": "90414e5b578e182719c42153efdb8a4986a2e57cba9167908f6076c3a6605c6e",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_gpio.h": "543647ca5547c6db6193ab014936027ecbd0991cd52de66a31a183a42c780e37",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_i2c.h": "90218c5ff9f01f805f4a86901ad1662bc5fd0a01fde48db22a472ef4e1a68bc2",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_iwdg.h": "022ebb8f10ec94e118d5ec05b2069990b4493821d279e6c2ba34c1e3e8d34f4a",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_pwr.h": "eec75ba7931b9f28a09dae57fb6a5644f0d67f8a936b209afc15bd2d354fda8b",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_rcc.h": "4d846ea385234266155a52d5701183c57d290d823ddb0e94c0c2d16cc6785c24",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_rtc.h": "b4e34936f1f1f22b977faa99e74945571a4aeaa10ec2f705cafae849d994322e",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_sdio.h": "8d2c2d7defacded9216399704fdd8dd035f1ca7e1f901238ae88971ce269078d",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_spi.h": "63f8394ef649802cc13173e34674e5404b10f3f8981a8ba1b233005ad886f85d",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_tim.h": "d85e6832b9d9b273e4abae27a43344ca2aa27592d1051b684c3fe5ac45244760",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_usart.h": "34e41470ab37857162f5db9bb1f1b78be8cedfa3cd0d0e29f133eadbbb40ad93",
+    "Vendor\\StdPeriph_Driver\\inc\\stm32f10x_wwdg.h": "8769211b6447aa1762b2216270c6c97662e9b4c99704ff3383b1b89c2152c68c",
+    "Vendor\\StdPeriph_Driver\\src\\misc.c": "26f3185c833e194c2935b2e75e3a44088a453be15b5717e4ba73495b3bf8879e",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_adc.c": "2e852fd85dfbf72dc32828ac206d4fae0f766e81011226def325f40fc3440ccd",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_bkp.c": "14709e2ae4a1059853d186c7c9cc20f87e72e1b71f384af947965b993c472de3",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_can.c": "0076401917685412a7249a5c231312dc9895582a3ae7cefe7ed1cf12f910524d",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_cec.c": "2809de98d8f6585da209890e84e691af806c1fadf7fffeb46ef1621543758172",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_crc.c": "47222eee22b03dae904d6ba3c0d36032050cacbc9510119680dc019e697627d8",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_dac.c": "3303a0f7f0a646084ea83fa6687a40760529b789bfd9dc1dbd2c970e3e1e42cf",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_dbgmcu.c": "83266150a52023d7f8c638ed44fcfa158af7597018b8b032b519d939ece35100",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_dma.c": "9b88c7f4ad6153612295002757c732251e9056e639b0d4aec8b80bcbfaadcf43",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_exti.c": "c472b11d2ab7c18c8a06214815ca34895347e55a1eadbd87410263caa0057422",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_flash.c": "3892046c3ff99785ad1dcef4d21340d9d3b15a31b8c4a6f1a453508e0b5bf252",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_fsmc.c": "9803ed7a3ee09c52477816e85444b5d16df45cb08112c825d29c9b983c5ad087",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_gpio.c": "827fc27aeb7160a0e3282a1124fd2430fe00a0fdf1b8184cc3b26dd147c17060",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_i2c.c": "2ca22c2c6f463f43a31a6a1db9676f9a3912a4df9da1d323ffa9a2bc7d94a6f6",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_iwdg.c": "2aa2682f705408bcda67e173beb55fd71f6facda87fe3794e1f55b21f374c245",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_pwr.c": "4a4bff32f84dcd516ba1f4ba18ee2895f8d1f19edebe65c8b3b7d4a00b5eed8d",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_rcc.c": "0ddce9581915c2cdb8e76b26f8c65504db6058f984650f7fa6f4e117c617d503",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_rtc.c": "4f7444ed6306bfd4711c5942fa1de67f8c3342b9657f46b18552be94317f70b5",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_sdio.c": "56d8917ba9190335cd2926356bfd9009c884124005bbcf5a0f355c28629d9fa5",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_spi.c": "f68543f864bc2ab35dba984418f7c7294b4be4523db2077d166dca143565e21d",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_tim.c": "a7f2c379b1c17189fd41f46912f9ff110e1c3d8f56512a5df98582f32f707fd5",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_usart.c": "796883d0317edebe6abfdb27b823650c22ea23b4a1abf9adc0a2b8cf79527345",
+    "Vendor\\StdPeriph_Driver\\src\\stm32f10x_wwdg.c": "4b5c8327544ecc047b6c2344b53bb0df40c6604e584637210669390d9f5db08a",
+    "Vendor\\StdPeriph_Driver\\templates\\stm32f10x_conf.h": "8a3dada35c409a0c48ffa29ef1e2b5b286a9e6c76efff735698d623d902b8792",
+    "Vendor\\StdPeriph_Driver\\templates\\stm32f10x_it.c": "72054b7f71a188388e08bb5c6c9362edadb2b057a9a93316b3509d2c61ceec67",
+    "Vendor\\StdPeriph_Driver\\templates\\stm32f10x_it.h": "98bed0697c2fc399f7e9e3e62f17ccbe7b4343a95af16ae595dcab1bfea554a0"
+  }
+}

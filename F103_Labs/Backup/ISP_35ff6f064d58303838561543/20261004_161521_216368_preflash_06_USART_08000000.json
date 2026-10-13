@@ -1,0 +1,25 @@
+{
+  "pid": "0x0410",
+  "bootloader_version": "2.2",
+  "supported_commands": [
+    "0x00",
+    "0x01",
+    "0x02",
+    "0x11",
+    "0x21",
+    "0x31",
+    "0x43",
+    "0x63",
+    "0x73",
+    "0x82",
+    "0x92"
+  ],
+  "flash_kib": 64,
+  "uid": "35ff6f064d58303838561543",
+  "created_at": "2026-10-04T16:15:21.217277+08:00",
+  "address": 134217728,
+  "length": 65536,
+  "sha256": "66ba913a18a7a60d07399edcbafb83d7bf1c7e858199f7d744661df4ee5768e8",
+  "binary": "20261004_161521_216368_preflash_06_USART_08000000.bin",
+  "purpose": "preflash_06_USART"
+}

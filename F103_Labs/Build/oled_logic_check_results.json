@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-13T14:31:45.755834+08:00",
+  "physical_hardware_test": false,
+  "method": "Actual Keil AXF executes GPIOB software-I2C; wired-AND ACK and SSD1306 GDDRAM model. Only OLED_BusDelay pure CPU wait is skipped; time/key IRQ events are injected.",
+  "limitations": [
+    "No physical OLED connected; controller type, pixel orientation, font appearance, pull-ups and bus waveform still need board verification.",
+    "Simulated milliseconds do not represent real bit-bang transfer duration."
+  ],
+  "tests": [
+    {
+      "name": "address_3c_initialization_64_chunks_and_display_on",
+      "passed": true,
+      "seconds": 0.714
+    },
+    {
+      "name": "address_3d_fallback_and_complete_frame",
+      "passed": true,
+      "seconds": 0.434
+    },
+    {
+      "name": "real_key_logic_during_display_hold_blink_stop_and_wrap",
+      "passed": true,
+      "seconds": 2.965
+    },
+    {
+      "name": "mid_frame_update_queues_complete_followup_frame",
+      "passed": true,
+      "seconds": 1.176
+    },
+    {
+      "name": "missing_display_address_nack_is_bounded",
+      "passed": true,
+      "seconds": 0.085
+    },
+    {
+      "name": "scl_held_low_is_bounded",
+      "passed": true,
+      "seconds": 0.085
+    },
+    {
+      "name": "sda_held_low_recovery_is_bounded",
+      "passed": true,
+      "seconds": 0.085
+    },
+    {
+      "name": "bus_fault_during_refresh_keeps_keys_and_blink_alive",
+      "passed": true,
+      "seconds": 0.903
+    }
+  ],
+  "passed": true,
+  "axf_sha256": "f7094364feee67977566cf0b4e57d2bdb39ab7fa2f6dbadcf3de62e11343c783",
+  "source_sha256": {
+    "Labs\\08_Application\\main.c": "46f27231d4579ca0a5f322c920f927fd098e7be19ced9738cc510c6cbd6cf4f6",
+    "Labs\\08_Application\\oled.c": "6e2c392a5749777e3aeb62bb324e42b3f7b60517d753282d37918e775ceebbd5",
+    "Labs\\08_Application\\oled.h": "36ffbf236827f876deee4d4713cfb6d3ac85611a6230db6133c6be9a1730e170",
+    "Labs\\08_Application\\oled_font.h": "15935ab0023948831f123259e6a00f194ad47e03035ed6108c3fb138a8865355"
+  }
+}

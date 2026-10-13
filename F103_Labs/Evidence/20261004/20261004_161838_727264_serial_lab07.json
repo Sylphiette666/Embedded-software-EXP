@@ -1,0 +1,388 @@
+{
+  "started_at": "2026-10-04T16:18:38.727+08:00",
+  "timezone": "UTC+08:00",
+  "status": "SERIAL_REPORT_CHECKS_PASSED",
+  "requested_lab": 7,
+  "port": "COM4",
+  "duration_seconds": 12.0,
+  "serial_settings": "115200 8N1, no flow control, DTR=False and RTS=False before open",
+  "actual_hardware": true,
+  "actual_hardware_serial_data_received": true,
+  "reset_performed": false,
+  "download_performed": false,
+  "GPIO_or_IRQ_injection": false,
+  "evidence_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.json",
+  "raw_serial_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.raw",
+  "timestamped_serial_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.jsonl",
+  "script_sha256": "acf4d502b5d5251a32047c7a6503ffdd108360e4e6f405b7e376d338472ed926",
+  "lines": [
+    {
+      "at": "2026-10-04T16:18:39.346+08:00",
+      "seconds": 0.606342,
+      "text": "STATE ms=21013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:40.339+08:00",
+      "seconds": 1.59948,
+      "text": "STATE ms=22013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:41.343+08:00",
+      "seconds": 2.603615,
+      "text": "STATE ms=23013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:42.339+08:00",
+      "seconds": 3.598742,
+      "text": "STATE ms=24013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:43.340+08:00",
+      "seconds": 4.600001,
+      "text": "STATE ms=25013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:44.344+08:00",
+      "seconds": 5.604576,
+      "text": "STATE ms=26013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:45.346+08:00",
+      "seconds": 6.606333,
+      "text": "STATE ms=27013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:46.345+08:00",
+      "seconds": 7.604984,
+      "text": "STATE ms=28013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:47.347+08:00",
+      "seconds": 8.606796,
+      "text": "STATE ms=29013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:48.347+08:00",
+      "seconds": 9.606838,
+      "text": "STATE ms=30013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:49.344+08:00",
+      "seconds": 10.603735,
+      "text": "STATE ms=31013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    },
+    {
+      "at": "2026-10-04T16:18:50.342+08:00",
+      "seconds": 11.602092,
+      "text": "STATE ms=32013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0"
+    }
+  ],
+  "reported_states": [
+    {
+      "at": "2026-10-04T16:18:39.346+08:00",
+      "seconds": 0.606342,
+      "text": "STATE ms=21013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 21013,
+      "LED0": 1,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:40.339+08:00",
+      "seconds": 1.59948,
+      "text": "STATE ms=22013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 22013,
+      "LED0": 0,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:41.343+08:00",
+      "seconds": 2.603615,
+      "text": "STATE ms=23013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 23013,
+      "LED0": 1,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:42.339+08:00",
+      "seconds": 3.598742,
+      "text": "STATE ms=24013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 24013,
+      "LED0": 0,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:43.340+08:00",
+      "seconds": 4.600001,
+      "text": "STATE ms=25013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 25013,
+      "LED0": 1,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:44.344+08:00",
+      "seconds": 5.604576,
+      "text": "STATE ms=26013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 26013,
+      "LED0": 0,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:45.346+08:00",
+      "seconds": 6.606333,
+      "text": "STATE ms=27013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 27013,
+      "LED0": 1,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:46.345+08:00",
+      "seconds": 7.604984,
+      "text": "STATE ms=28013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 28013,
+      "LED0": 0,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:47.347+08:00",
+      "seconds": 8.606796,
+      "text": "STATE ms=29013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 29013,
+      "LED0": 1,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:48.347+08:00",
+      "seconds": 9.606838,
+      "text": "STATE ms=30013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 30013,
+      "LED0": 0,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:49.344+08:00",
+      "seconds": 10.603735,
+      "text": "STATE ms=31013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 31013,
+      "LED0": 1,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    },
+    {
+      "at": "2026-10-04T16:18:50.342+08:00",
+      "seconds": 11.602092,
+      "text": "STATE ms=32013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0",
+      "ms": 32013,
+      "LED0": 0,
+      "LED1": 0,
+      "KEY0": 0,
+      "KEY1": 0,
+      "IRQ0": 0,
+      "IRQ1": 0,
+      "RX_ERRORS": 0
+    }
+  ],
+  "transmissions": [],
+  "command_checks": [],
+  "errors": [],
+  "cleanup_errors": [],
+  "limitations": [
+    "LED state in STATE is firmware ODR readback, not direct pin measurement.",
+    "Lab 2/3 logs report intended actions and cannot prove electrical outputs.",
+    "Physical LED illumination requires user observation.",
+    "Host-clock timing is coarse; no claim of calibrated 1 ms accuracy."
+  ],
+  "local_artifacts_not_device_readback": {
+    "hex": {
+      "file": "D:\\MDK5\\F103_Labs\\Build\\Keil_07_SysTick\\07_SysTick.hex",
+      "sha256": "09b6c1083f7b5f35b9f349a64eea72623b1adea94e58867419a425779af87d14"
+    },
+    "axf": {
+      "file": "D:\\MDK5\\F103_Labs\\Build\\Keil_07_SysTick\\07_SysTick.axf",
+      "sha256": "4c5bf60fc3e18f809d4251882090467327f5cf9ad3af5911ba59bc04c2a4da03"
+    }
+  },
+  "elapsed_seconds": 12.001,
+  "command_sequence_complete": null,
+  "checks": [
+    {
+      "name": "UART_response_received",
+      "passed": true
+    },
+    {
+      "name": "structured_firmware_state_received",
+      "passed": true
+    },
+    {
+      "name": "UART_error_counter_not_increasing",
+      "passed": true,
+      "first": 0,
+      "last": 0
+    },
+    {
+      "name": "coarse_serial_report_alternation",
+      "expected_seconds": 1.0,
+      "host_intervals_seconds": [
+        1.004135,
+        0.9951270000000001,
+        1.0012589999999997,
+        1.004575,
+        1.0017570000000005,
+        0.9986509999999997,
+        1.0018119999999993,
+        1.0000420000000005,
+        0.9968970000000006,
+        0.9983570000000004
+      ],
+      "host_mean_seconds": 1.0002612000000002,
+      "reported_changes": [
+        [
+          0.606342,
+          1,
+          21013
+        ],
+        [
+          1.59948,
+          0,
+          22013
+        ],
+        [
+          2.603615,
+          1,
+          23013
+        ],
+        [
+          3.598742,
+          0,
+          24013
+        ],
+        [
+          4.600001,
+          1,
+          25013
+        ],
+        [
+          5.604576,
+          0,
+          26013
+        ],
+        [
+          6.606333,
+          1,
+          27013
+        ],
+        [
+          7.604984,
+          0,
+          28013
+        ],
+        [
+          8.606796,
+          1,
+          29013
+        ],
+        [
+          9.606838,
+          0,
+          30013
+        ],
+        [
+          10.603735,
+          1,
+          31013
+        ],
+        [
+          11.602092,
+          0,
+          32013
+        ]
+      ],
+      "passed": true,
+      "scope": "Firmware ODR report, no independent GPIO or light measurement.",
+      "timing_limit": "PC serial arrivals / 200 ms polling are coarse; not calibrated instrument timing."
+    },
+    {
+      "name": "firmware_reported_1000ms_steps",
+      "deltas_ms": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "passed": true,
+      "scope": "Same-device software clock; cannot independently prove physical 1 ms precision."
+    }
+  ],
+  "startup_lab_numbers_observed": [],
+  "firmware_identity_limitation": "No reset, Flash readback, UID read or hash verification is performed by this script. Connect this evidence to the separate ISP/SWD download record. A startup banner may be missed.",
+  "serial_checks_passed": true,
+  "overall_experiment_passed": null,
+  "electrical_pin_validation": "NOT_PERFORMED",
+  "visible_LED_validation": "USER_OBSERVATION_REQUIRED",
+  "serial_rx_bytes": 840,
+  "serial_rx_sha256": "0f6b24676c39ebb37614e8689c5a7782faa081112fcffedbc0ac8cc37c6ce99d",
+  "serial_text": "STATE ms=21013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=22013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=23013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=24013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=25013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=26013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=27013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=28013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=29013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=30013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=31013 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\nSTATE ms=32013 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+  "trailing_partial_line": "",
+  "finished_at": "2026-10-04T16:18:50.742+08:00",
+  "exit_code": 0
+}

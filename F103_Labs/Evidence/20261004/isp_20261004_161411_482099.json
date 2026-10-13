@@ -1,0 +1,51 @@
+{
+  "started_at": "2026-10-04T16:14:11.482099+08:00",
+  "mode": "flash",
+  "port": "COM4",
+  "status": "PASS",
+  "flash_writes_started": true,
+  "protocol": "STM32 AN3155 UART 115200 8E1",
+  "serial_log": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161411_482099.serial.jsonl",
+  "device": {
+    "pid": "0x0410",
+    "bootloader_version": "2.2",
+    "supported_commands": [
+      "0x00",
+      "0x01",
+      "0x02",
+      "0x11",
+      "0x21",
+      "0x31",
+      "0x43",
+      "0x63",
+      "0x73",
+      "0x82",
+      "0x92"
+    ],
+    "flash_kib": 64,
+    "uid": "35ff6f064d58303838561543"
+  },
+  "target": "01_Platform",
+  "hex_file": "D:\\MDK5\\F103_Labs\\Build\\Keil_01_Platform\\01_Platform.hex",
+  "hex_sha256": "617ceb0e3683c4efb74611ef9399750fee7b05736984b25072caff310cef83ab",
+  "prerequisite_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161325_932217_double_read_backup_08000000.bin",
+  "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161420_019952_preflash_01_Platform_08000000.bin",
+  "pages_to_program": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "pages_programmed": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "readback_sha256": "66ba913a18a7a60d07399edcbafb83d7bf1c7e858199f7d744661df4ee5768e8",
+  "verification": "complete_64k_readback_matches_expected_RMW_image",
+  "flash_boot_reset": true,
+  "ended_at": "2026-10-04T16:14:29.406464+08:00"
+}

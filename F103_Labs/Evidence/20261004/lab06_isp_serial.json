@@ -1,0 +1,459 @@
+{
+  "actual_hardware": true,
+  "lab": 6,
+  "port": "COM4",
+  "checks": [
+    {
+      "command_hex": "59",
+      "reply": "OK Y LED0=1\r\n",
+      "state": "STATE ms=47355 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 1,
+      "passed": true
+    },
+    {
+      "command_hex": "58",
+      "reply": "",
+      "state": "STATE ms=47982 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 1,
+      "passed": true
+    },
+    {
+      "command_hex": "79",
+      "reply": "",
+      "state": "STATE ms=48606 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 1,
+      "passed": true
+    },
+    {
+      "command_hex": "0d0a",
+      "reply": "",
+      "state": "STATE ms=49235 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 1,
+      "passed": true
+    },
+    {
+      "command_hex": "4e",
+      "reply": "OK N LED0=0\r\n",
+      "state": "STATE ms=49859 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 0,
+      "passed": true
+    },
+    {
+      "command_hex": "58",
+      "reply": "",
+      "state": "STATE ms=50478 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 0,
+      "passed": true
+    },
+    {
+      "command_hex": "79",
+      "reply": "",
+      "state": "STATE ms=51099 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 0,
+      "passed": true
+    },
+    {
+      "command_hex": "0d0a",
+      "reply": "",
+      "state": "STATE ms=51721 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0\r\n",
+      "expected_D1": 0,
+      "passed": true
+    }
+  ],
+  "serial_checks_passed": true,
+  "events": [
+    {
+      "seconds": 0.00011109997285529971,
+      "direction": "TX",
+      "hex": "59"
+    },
+    {
+      "seconds": 0.0028372000087983906,
+      "direction": "RX",
+      "hex": "4f",
+      "text": "O"
+    },
+    {
+      "seconds": 0.0028808999923057854,
+      "direction": "RX",
+      "hex": "4b2059204c4544303d310d0a",
+      "text": "K Y LED0=1\r\n"
+    },
+    {
+      "seconds": 0.31386439997004345,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 0.31685030000517145,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 0.3169262000010349,
+      "direction": "RX",
+      "hex": "54415445206d733d3437333535204c4544303d31204c4544313d30204b4559",
+      "text": "TATE ms=47355 LED0=1 LED1=0 KEY"
+    },
+    {
+      "seconds": 0.3194775999872945,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 0.3195096999988891,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 0.3212076000054367,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 0.32127549999859184,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 0.6284777999971993,
+      "direction": "TX",
+      "hex": "58"
+    },
+    {
+      "seconds": 0.9408038000110537,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 0.9436975999851711,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 0.9437576999771409,
+      "direction": "RX",
+      "hex": "54415445206d733d3437393832204c4544303d31204c4544313d30204b4559",
+      "text": "TATE ms=47982 LED0=1 LED1=0 KEY"
+    },
+    {
+      "seconds": 0.9464972999994643,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 0.9465407999814488,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 0.9483813000260852,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 0.9484428999712691,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 1.2511092000058852,
+      "direction": "TX",
+      "hex": "79"
+    },
+    {
+      "seconds": 1.564627500018105,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 1.5674822999862954,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 1.567508000007365,
+      "direction": "RX",
+      "hex": "54415445206d733d3438363036204c4544303d31204c4544313d30204b4559",
+      "text": "TATE ms=48606 LED0=1 LED1=0 KEY"
+    },
+    {
+      "seconds": 1.5703755000140518,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 1.5704612000263296,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 1.5721584999701008,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 1.5722067999886349,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 1.8790787999751046,
+      "direction": "TX",
+      "hex": "0d0a"
+    },
+    {
+      "seconds": 2.193282700027339,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 2.1961923000053503,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 2.1962736999848858,
+      "direction": "RX",
+      "hex": "54415445206d733d3439323335204c4544303d31204c4544313d30204b4559",
+      "text": "TATE ms=49235 LED0=1 LED1=0 KEY"
+    },
+    {
+      "seconds": 2.1990442000096664,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 2.199075600015931,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 2.2007497000158764,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 2.2008092000032775,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 2.506175799993798,
+      "direction": "TX",
+      "hex": "4e"
+    },
+    {
+      "seconds": 2.508654100005515,
+      "direction": "RX",
+      "hex": "4f",
+      "text": "O"
+    },
+    {
+      "seconds": 2.5087211999925785,
+      "direction": "RX",
+      "hex": "4b204e204c4544303d300d0a",
+      "text": "K N LED0=0\r\n"
+    },
+    {
+      "seconds": 2.8171622999943793,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 2.820101400022395,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 2.8201594999991357,
+      "direction": "RX",
+      "hex": "54415445206d733d3439383539204c4544303d30204c4544313d30204b4559",
+      "text": "TATE ms=49859 LED0=0 LED1=0 KEY"
+    },
+    {
+      "seconds": 2.8228043999988586,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 2.8228651999961585,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 2.8246583999716677,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 2.8247106000198983,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 3.1278283999999985,
+      "direction": "TX",
+      "hex": "58"
+    },
+    {
+      "seconds": 3.4360260000103153,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 3.4389907000004314,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 3.4390608000103384,
+      "direction": "RX",
+      "hex": "54415445206d733d3530343738204c4544303d30204c4544313d30204b4559",
+      "text": "TATE ms=50478 LED0=0 LED1=0 KEY"
+    },
+    {
+      "seconds": 3.441736100008711,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 3.4417734000016935,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 3.4434618999948725,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 3.443497699976433,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 3.7460283000255004,
+      "direction": "TX",
+      "hex": "79"
+    },
+    {
+      "seconds": 4.057169599982444,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 4.060101400013082,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 4.060121199989226,
+      "direction": "RX",
+      "hex": "54415445206d733d3531303939204c4544303d30204c4544313d30204b4559",
+      "text": "TATE ms=51099 LED0=0 LED1=0 KEY"
+    },
+    {
+      "seconds": 4.063092200027313,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 4.063113800017163,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 4.064805999980308,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 4.064834900025744,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    },
+    {
+      "seconds": 4.3681663000024855,
+      "direction": "TX",
+      "hex": "0d0a"
+    },
+    {
+      "seconds": 4.679725900001358,
+      "direction": "TX",
+      "hex": "3f"
+    },
+    {
+      "seconds": 4.682701300014742,
+      "direction": "RX",
+      "hex": "53",
+      "text": "S"
+    },
+    {
+      "seconds": 4.682750099978875,
+      "direction": "RX",
+      "hex": "54415445206d733d3531373231204c4544303d30204c4544313d30204b4559",
+      "text": "TATE ms=51721 LED0=0 LED1=0 KEY"
+    },
+    {
+      "seconds": 4.68540600000415,
+      "direction": "RX",
+      "hex": "30",
+      "text": "0"
+    },
+    {
+      "seconds": 4.68543780001346,
+      "direction": "RX",
+      "hex": "3d30204b4559313d3020495251303d3020495251313d302052585f4552524f",
+      "text": "=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRO"
+    },
+    {
+      "seconds": 4.687077099981252,
+      "direction": "RX",
+      "hex": "52",
+      "text": "R"
+    },
+    {
+      "seconds": 4.687133300001733,
+      "direction": "RX",
+      "hex": "533d300d0a",
+      "text": "S=0\r\n"
+    }
+  ],
+  "limitation": "LED state is firmware ODR report over physical UART; emitted light and independent GPIO pad voltage not observed."
+}

@@ -1,0 +1,203 @@
+{
+  "started_at": "2026-10-04T16:17:35.082+08:00",
+  "timezone": "UTC+08:00",
+  "status": "SERIAL_REPORT_CHECKS_PASSED",
+  "requested_lab": 3,
+  "port": "COM4",
+  "duration_seconds": 12.0,
+  "serial_settings": "115200 8N1, no flow control, DTR=False and RTS=False before open",
+  "actual_hardware": true,
+  "actual_hardware_serial_data_received": true,
+  "reset_performed": false,
+  "download_performed": false,
+  "GPIO_or_IRQ_injection": false,
+  "evidence_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.json",
+  "raw_serial_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.serial.raw",
+  "timestamped_serial_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.serial.jsonl",
+  "script_sha256": "acf4d502b5d5251a32047c7a6503ffdd108360e4e6f405b7e376d338472ed926",
+  "lines": [
+    {
+      "at": "2026-10-04T16:17:35.715+08:00",
+      "seconds": 0.618586,
+      "text": "ON"
+    },
+    {
+      "at": "2026-10-04T16:17:36.721+08:00",
+      "seconds": 1.624272,
+      "text": "OFF"
+    },
+    {
+      "at": "2026-10-04T16:17:37.714+08:00",
+      "seconds": 2.617644,
+      "text": "ON"
+    },
+    {
+      "at": "2026-10-04T16:17:38.716+08:00",
+      "seconds": 3.619545,
+      "text": "OFF"
+    },
+    {
+      "at": "2026-10-04T16:17:39.715+08:00",
+      "seconds": 4.618948,
+      "text": "ON"
+    },
+    {
+      "at": "2026-10-04T16:17:40.721+08:00",
+      "seconds": 5.624219,
+      "text": "OFF"
+    },
+    {
+      "at": "2026-10-04T16:17:41.714+08:00",
+      "seconds": 6.617168,
+      "text": "ON"
+    },
+    {
+      "at": "2026-10-04T16:17:42.714+08:00",
+      "seconds": 7.617818,
+      "text": "OFF"
+    },
+    {
+      "at": "2026-10-04T16:17:43.717+08:00",
+      "seconds": 8.620649,
+      "text": "ON"
+    },
+    {
+      "at": "2026-10-04T16:17:44.717+08:00",
+      "seconds": 9.620239,
+      "text": "OFF"
+    },
+    {
+      "at": "2026-10-04T16:17:45.715+08:00",
+      "seconds": 10.618961,
+      "text": "ON"
+    },
+    {
+      "at": "2026-10-04T16:17:46.721+08:00",
+      "seconds": 11.624288,
+      "text": "OFF"
+    }
+  ],
+  "reported_states": [],
+  "transmissions": [],
+  "command_checks": [],
+  "errors": [],
+  "cleanup_errors": [],
+  "limitations": [
+    "LED state in STATE is firmware ODR readback, not direct pin measurement.",
+    "Lab 2/3 logs report intended actions and cannot prove electrical outputs.",
+    "Physical LED illumination requires user observation.",
+    "Host-clock timing is coarse; no claim of calibrated 1 ms accuracy."
+  ],
+  "local_artifacts_not_device_readback": {
+    "hex": {
+      "file": "D:\\MDK5\\F103_Labs\\Build\\Keil_03_StdPeriph\\03_StdPeriph.hex",
+      "sha256": "e9dc1ace52291182d5c39b2838fcdd46546ecc6e911410918ff46c60cf23a6ea"
+    },
+    "axf": {
+      "file": "D:\\MDK5\\F103_Labs\\Build\\Keil_03_StdPeriph\\03_StdPeriph.axf",
+      "sha256": "4a1bc43cfa23e112845df6d9125715516ea00c08b08dca3f07124598f00824b4"
+    }
+  },
+  "elapsed_seconds": 12.006,
+  "command_sequence_complete": null,
+  "checks": [
+    {
+      "name": "UART_response_received",
+      "passed": true
+    },
+    {
+      "name": "coarse_serial_report_alternation",
+      "expected_seconds": 1.0,
+      "host_intervals_seconds": [
+        0.9933719999999999,
+        1.0019010000000002,
+        0.9994029999999996,
+        1.0052710000000005,
+        0.9929490000000003,
+        1.0006499999999994,
+        1.0028310000000005,
+        0.9995899999999995,
+        0.9987220000000008,
+        1.0053269999999994
+      ],
+      "host_mean_seconds": 1.0000016,
+      "reported_changes": [
+        [
+          0.618586,
+          1,
+          null
+        ],
+        [
+          1.624272,
+          0,
+          null
+        ],
+        [
+          2.617644,
+          1,
+          null
+        ],
+        [
+          3.619545,
+          0,
+          null
+        ],
+        [
+          4.618948,
+          1,
+          null
+        ],
+        [
+          5.624219,
+          0,
+          null
+        ],
+        [
+          6.617168,
+          1,
+          null
+        ],
+        [
+          7.617818,
+          0,
+          null
+        ],
+        [
+          8.620649,
+          1,
+          null
+        ],
+        [
+          9.620239,
+          0,
+          null
+        ],
+        [
+          10.618961,
+          1,
+          null
+        ],
+        [
+          11.624288,
+          0,
+          null
+        ]
+      ],
+      "passed": true,
+      "scope": "Hard-coded intent log, no independent GPIO evidence.",
+      "timing_limit": "PC serial arrivals / 200 ms polling are coarse; not calibrated instrument timing."
+    }
+  ],
+  "startup_lab_numbers_observed": [],
+  "firmware_identity_limitation": "No reset, Flash readback, UID read or hash verification is performed by this script. Connect this evidence to the separate ISP/SWD download record. A startup banner may be missed.",
+  "serial_checks_passed": true,
+  "overall_experiment_passed": null,
+  "electrical_pin_validation": "NOT_PERFORMED",
+  "visible_LED_validation": "USER_OBSERVATION_REQUIRED",
+  "serial_rx_bytes": 54,
+  "serial_rx_sha256": "b0d12d9c11f621fe57b1967699f61cb4ca26a6cf569a4df3d8c2ea8cfb27f097",
+  "serial_text": "ON\r\nOFF\r\nON\r\nOFF\r\nON\r\nOFF\r\nON\r\nOFF\r\nON\r\nOFF\r\nON\r\nOFF\r\n",
+  "trailing_partial_line": "",
+  "finished_at": "2026-10-04T16:17:47.103+08:00",
+  "exit_code": 0
+}

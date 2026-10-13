@@ -1,0 +1,854 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T16:23:49.964794+08:00",
+  "board": "普中精灵 STM32F103C8T6 完整开发板",
+  "serial_port": "COM4",
+  "probe": {
+    "type": "ST-Link",
+    "serial": "01040166524300093638414B",
+    "target_id": "ISP识别PID 0x0410；SWD未连接",
+    "probe_id": "01040166524300093638414B",
+    "firmware": "V2J28M18",
+    "reported_target_voltage": 0.2112,
+    "note": "Probe-reported voltage only; not independent target voltage measurement.",
+    "evidence": [
+      "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\probe_diagnostic.json"
+    ]
+  },
+  "overall": {
+    "status": "partial",
+    "conclusion": "已完成8个工程重新编译；板上ISP及串口证据按实验记录，所有实验整体最多为部分验证。",
+    "limitations": [
+      "物理按键、LED光学观察和校准时序没有证据时均标记未验证。",
+      "SWD目标连接失败是连接问题，不代表实验程序失败。",
+      "离线模拟结果不计作板上验证。"
+    ]
+  },
+  "software": [
+    {
+      "name": "Keil uVision",
+      "path": "D:\\Keil5\\UV4\\UV4.exe",
+      "version": "5.43.1",
+      "status": "passed",
+      "evidence": [
+        "D:\\F103_LabTools\\environment_status.json"
+      ],
+      "notes": "软件版本源于既有安装记录；本汇总不安装软件、不执行硬件探测。"
+    },
+    {
+      "name": "Arm Compiler",
+      "path": "D:\\Keil5\\ARM\\ARMCLANG\\bin\\armclang.exe",
+      "version": "6.24",
+      "status": "passed",
+      "evidence": [
+        "D:\\F103_LabTools\\environment_status.json"
+      ],
+      "notes": "软件版本源于既有安装记录；本汇总不安装软件、不执行硬件探测。"
+    },
+    {
+      "name": "STM32F1 DFP",
+      "path": "D:\\Keil5\\Keil\\STM32F1xx_DFP\\2.4.1",
+      "version": "2.4.1",
+      "status": "passed",
+      "evidence": [
+        "D:\\F103_LabTools\\environment_status.json"
+      ],
+      "notes": "软件版本源于既有安装记录；本汇总不安装软件、不执行硬件探测。"
+    },
+    {
+      "name": "Tera Term",
+      "path": "D:\\TeraTerm\\ttermpro.exe",
+      "version": "5.6.2",
+      "status": "passed",
+      "evidence": [
+        "D:\\F103_LabTools\\environment_status.json"
+      ],
+      "notes": "软件版本源于既有安装记录；本汇总不安装软件、不执行硬件探测。"
+    },
+    {
+      "name": "Python实验工具环境",
+      "path": "D:\\F411_PythonEnv\\Scripts\\python.exe",
+      "version": "版本见安装记录",
+      "status": "passed",
+      "evidence": [
+        "D:\\F103_LabTools\\environment_status.json"
+      ],
+      "notes": "软件版本源于既有安装记录；本汇总不安装软件、不执行硬件探测。"
+    },
+    {
+      "name": "CH340驱动",
+      "path": "Windows已枚举COM4",
+      "version": "3.9.2024.9 oem46.inf signed Microsoft",
+      "status": "passed",
+      "evidence": [
+        "D:\\F103_LabTools\\environment_status.json"
+      ],
+      "notes": "软件版本源于既有安装记录；本汇总不安装软件、不执行硬件探测。"
+    }
+  ],
+  "downloads": [
+    {
+      "method": "ISP",
+      "status": "passed",
+      "target": "01_Platform",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161411_482099.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161411_482099.rx.bin",
+        "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161420_019952_preflash_01_Platform_08000000.bin",
+        "D:\\MDK5\\F103_Labs\\Build\\Keil_01_Platform\\01_Platform.hex"
+      ],
+      "notes": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+      "started_at": "2026-10-04T16:14:11.482099+08:00",
+      "hex_sha256": "617ceb0e3683c4efb74611ef9399750fee7b05736984b25072caff310cef83ab",
+      "uid": "35ff6f064d58303838561543",
+      "readback_sha256": "66ba913a18a7a60d07399edcbafb83d7bf1c7e858199f7d744661df4ee5768e8",
+      "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161420_019952_preflash_01_Platform_08000000.bin"
+    },
+    {
+      "method": "ISP",
+      "status": "passed",
+      "target": "06_USART",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161512_690554.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161512_690554.rx.bin",
+        "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161521_216368_preflash_06_USART_08000000.bin",
+        "D:\\MDK5\\F103_Labs\\Build\\Keil_06_USART\\06_USART.hex"
+      ],
+      "notes": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+      "started_at": "2026-10-04T16:15:12.690554+08:00",
+      "hex_sha256": "b38390baa101f25c822ec780a8ec15660381a978eef02f7b15bb98f7b85e93fe",
+      "uid": "35ff6f064d58303838561543",
+      "readback_sha256": "377726a1be6635c6954292ac7cee572f0649c9dca4cac436ed3b925603126f72",
+      "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161521_216368_preflash_06_USART_08000000.bin"
+    },
+    {
+      "method": "ISP",
+      "status": "passed",
+      "target": "02_Register",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161636_302523.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161636_302523.rx.bin",
+        "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161644_778564_preflash_02_Register_08000000.bin",
+        "D:\\MDK5\\F103_Labs\\Build\\Keil_02_Register\\02_Register.hex"
+      ],
+      "notes": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+      "started_at": "2026-10-04T16:16:36.302523+08:00",
+      "hex_sha256": "67bef9b6c51c643224480c53e95a35d91582f501f8bf4ab38cbd1a9a10d72819",
+      "uid": "35ff6f064d58303838561543",
+      "readback_sha256": "05cdd71a7aec9ea139b8a5d500f59e40733d6ef47f7cd163bc95666f34e28966",
+      "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161644_778564_preflash_02_Register_08000000.bin"
+    },
+    {
+      "method": "ISP",
+      "status": "passed",
+      "target": "03_StdPeriph",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161712_270417.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161712_270417.rx.bin",
+        "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161720_780969_preflash_03_StdPeriph_08000000.bin",
+        "D:\\MDK5\\F103_Labs\\Build\\Keil_03_StdPeriph\\03_StdPeriph.hex"
+      ],
+      "notes": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+      "started_at": "2026-10-04T16:17:12.270417+08:00",
+      "hex_sha256": "e9dc1ace52291182d5c39b2838fcdd46546ecc6e911410918ff46c60cf23a6ea",
+      "uid": "35ff6f064d58303838561543",
+      "readback_sha256": "7e4329dfe6982dab1d38ecf91a358171af7b4e964d79af484490e29dbdd5da39",
+      "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161720_780969_preflash_03_StdPeriph_08000000.bin"
+    },
+    {
+      "method": "ISP",
+      "status": "passed",
+      "target": "07_SysTick",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161800_512782.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161800_512782.rx.bin",
+        "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161809_048688_preflash_07_SysTick_08000000.bin",
+        "D:\\MDK5\\F103_Labs\\Build\\Keil_07_SysTick\\07_SysTick.hex"
+      ],
+      "notes": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+      "started_at": "2026-10-04T16:18:00.512782+08:00",
+      "hex_sha256": "09b6c1083f7b5f35b9f349a64eea72623b1adea94e58867419a425779af87d14",
+      "uid": "35ff6f064d58303838561543",
+      "readback_sha256": "c71d0f532233c92f87277d982498bab16b868f6346e28678b46649c3c9ab610f",
+      "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161809_048688_preflash_07_SysTick_08000000.bin"
+    },
+    {
+      "method": "ISP",
+      "status": "passed",
+      "target": "04_Keys",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161908_006542.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161908_006542.rx.bin",
+        "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161916_528985_preflash_04_Keys_08000000.bin",
+        "D:\\MDK5\\F103_Labs\\Build\\Keil_04_Keys\\04_Keys.hex"
+      ],
+      "notes": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+      "started_at": "2026-10-04T16:19:08.006542+08:00",
+      "hex_sha256": "a5e3066a7c5e2f08b3ab4ef2ca0cd9864fa450a741b812080af0e568346bbe8f",
+      "uid": "35ff6f064d58303838561543",
+      "readback_sha256": "ee0d6b5895de53c4fdaa3b630d6c753b265a89819e0773b31b7102cc5d1819a3",
+      "preflash_backup": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161916_528985_preflash_04_Keys_08000000.bin"
+    },
+    {
+      "method": "SWD",
+      "status": "failed",
+      "target": "",
+      "evidence": [
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161206_725062_identify-backup.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161233_014458_identify-backup.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161301_059379_identify-backup.json",
+        "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161503_298299_identify-backup.json"
+      ],
+      "notes": "ST-Link探针已枚举，但目标连接失败；未进行SWD下载。此项为连接问题，不判定实验程序失败。"
+    }
+  ],
+  "labs": [
+    {
+      "id": 1,
+      "target": "01_Platform",
+      "source_sha256": "adf43d32cfaade9af1d56b3a4ae61508c7707e2d7412473ccf1257518773099e",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\01_Platform\\main.c",
+      "hex_sha256": "617ceb0e3683c4efb74611ef9399750fee7b05736984b25072caff310cef83ab",
+      "status": "partial",
+      "conclusion": "已取得部分真实板上证据，未完成项仍需现场验收。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_01_Platform\\01_Platform.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_01_Platform\\01_Platform.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "passed",
+          "method": "isp",
+          "observed": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161411_482099.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161411_482099.rx.bin",
+            "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161420_019952_preflash_01_Platform_08000000.bin",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_01_Platform\\01_Platform.hex"
+          ]
+        },
+        {
+          "item": "真实UART数据及原始文件一致性",
+          "status": "passed",
+          "method": "serial",
+          "observed": "收到4900字节；SHA256=5168c18238c6af2c286ca2cfb330b35654171de9f3d4a79a06e19e15df32c0b2；校验一致=True。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab01_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab01_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "LED输出寄存器状态的串口报告",
+          "status": "passed",
+          "method": "serial",
+          "observed": "70条STATE，LED0/LED1报告状态=[(0, 0), (1, 0)]；未测引脚电压或LED发光。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab01_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab01_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。",
+        "PC串口时间只能支持粗略时序观察，不证明校准仪器级1 ms精度。",
+        "ST-Link/SWD目标连接未成功，指导书要求的第二种下载方式尚未验收。"
+      ]
+    },
+    {
+      "id": 2,
+      "target": "02_Register",
+      "source_sha256": "aa957aa53eedcea0a422e1b35c54ac588f846033f1cfa224990eabda2dfc76f7",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\02_Register\\main.c",
+      "hex_sha256": "67bef9b6c51c643224480c53e95a35d91582f501f8bf4ab38cbd1a9a10d72819",
+      "status": "partial",
+      "conclusion": "已取得部分真实板上证据，未完成项仍需现场验收。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_02_Register\\02_Register.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_02_Register\\02_Register.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "passed",
+          "method": "isp",
+          "observed": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161636_302523.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161636_302523.rx.bin",
+            "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161644_778564_preflash_02_Register_08000000.bin",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_02_Register\\02_Register.hex"
+          ]
+        },
+        {
+          "item": "真实UART数据及原始文件一致性",
+          "status": "passed",
+          "method": "serial",
+          "observed": "收到240字节；SHA256=a2cb8dc2b523649367171f243df0a56edcdf3ff935b814ced920a378f5eadcfd；校验一致=True。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.serial.raw"
+          ]
+        },
+        {
+          "item": "coarse_serial_report_alternation",
+          "status": "passed",
+          "method": "serial",
+          "observed": "报告翻转16次；目标间隔0.5秒；PC到达时间均值0.500970秒；区间0.493832～0.507622秒。仅是固件意图/ODR串口报告和PC粗计时，未测LED光线、引脚电压或校准时基。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161703_764429_serial_lab02.serial.raw"
+          ]
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。"
+      ]
+    },
+    {
+      "id": 3,
+      "target": "03_StdPeriph",
+      "source_sha256": "b2182afefe89e6cac2ed76956524c5c4e27e1129837a13aeeafda0cb4069be84",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\03_StdPeriph\\main.c",
+      "hex_sha256": "e9dc1ace52291182d5c39b2838fcdd46546ecc6e911410918ff46c60cf23a6ea",
+      "status": "partial",
+      "conclusion": "已取得部分真实板上证据，未完成项仍需现场验收。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_03_StdPeriph\\03_StdPeriph.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_03_StdPeriph\\03_StdPeriph.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "passed",
+          "method": "isp",
+          "observed": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161712_270417.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161712_270417.rx.bin",
+            "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161720_780969_preflash_03_StdPeriph_08000000.bin",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_03_StdPeriph\\03_StdPeriph.hex"
+          ]
+        },
+        {
+          "item": "真实UART数据及原始文件一致性",
+          "status": "passed",
+          "method": "serial",
+          "observed": "收到54字节；SHA256=b0d12d9c11f621fe57b1967699f61cb4ca26a6cf569a4df3d8c2ea8cfb27f097；校验一致=True。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.serial.raw"
+          ]
+        },
+        {
+          "item": "coarse_serial_report_alternation",
+          "status": "passed",
+          "method": "serial",
+          "observed": "报告翻转12次；目标间隔1.0秒；PC到达时间均值1.000002秒；区间0.992949～1.005327秒。仅是固件意图/ODR串口报告和PC粗计时，未测LED光线、引脚电压或校准时基。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161735_082364_serial_lab03.serial.raw"
+          ]
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。"
+      ]
+    },
+    {
+      "id": 4,
+      "target": "04_Keys",
+      "source_sha256": "586bf59fc421c64644e01fa065e570ddbf2bedf757d671627578b4f66e83a6ae",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\04_Keys\\main.c",
+      "hex_sha256": "a5e3066a7c5e2f08b3ab4ef2ca0cd9864fa450a741b812080af0e568346bbe8f",
+      "status": "partial",
+      "conclusion": "已取得部分真实板上证据，未完成项仍需现场验收。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_04_Keys\\04_Keys.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_04_Keys\\04_Keys.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "passed",
+          "method": "isp",
+          "observed": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161908_006542.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161908_006542.rx.bin",
+            "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161916_528985_preflash_04_Keys_08000000.bin",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_04_Keys\\04_Keys.hex"
+          ]
+        },
+        {
+          "item": "真实UART数据及原始文件一致性",
+          "status": "passed",
+          "method": "serial",
+          "observed": "收到62336字节；SHA256=fdbd34822e25886038c2fb5fd38f5edd41e9781d7ae4315fc019b660aa96684b；校验一致=True。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161938_724453_serial_lab04.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161938_724453_serial_lab04.serial.raw"
+          ]
+        },
+        {
+          "item": "structured_firmware_state_received",
+          "status": "passed",
+          "method": "serial",
+          "observed": "{\"name\": \"structured_firmware_state_received\", \"passed\": true}",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161938_724453_serial_lab04.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161938_724453_serial_lab04.serial.raw"
+          ]
+        },
+        {
+          "item": "UART_error_counter_not_increasing",
+          "status": "passed",
+          "method": "serial",
+          "observed": "{\"name\": \"UART_error_counter_not_increasing\", \"passed\": true, \"first\": 0, \"last\": 0}",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161938_724453_serial_lab04.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161938_724453_serial_lab04.serial.raw"
+          ]
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        },
+        {
+          "item": "K1/K4实体按键完整操作",
+          "status": "not_tested",
+          "method": "physical_button",
+          "observed": "无明确实体按键操作证据；未用软件注入代替。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。"
+      ]
+    },
+    {
+      "id": 5,
+      "target": "05_EXTI",
+      "source_sha256": "beb89506338b2ea9d8a69b27630600e837bd425fe3d049ac311411527de6deeb",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\05_EXTI\\main.c",
+      "hex_sha256": "540be6b24f3514129ad237056b427a471628d325e28b780c5d3630764465eed6",
+      "status": "not_tested",
+      "conclusion": "已编译；尚无足够真实板上证据。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_05_EXTI\\05_EXTI.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_05_EXTI\\05_EXTI.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "not_tested",
+          "method": "isp",
+          "observed": "没有与当前固件关联的完整有效下载记录。",
+          "evidence": []
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        },
+        {
+          "item": "K1/K4实体按键完整操作",
+          "status": "not_tested",
+          "method": "physical_button",
+          "observed": "无明确实体按键操作证据；未用软件注入代替。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。"
+      ]
+    },
+    {
+      "id": 6,
+      "target": "06_USART",
+      "source_sha256": "9a1c3bb7c30eae061269ce6f6a9d7d182971b654c4494f4c0dc6b40ae130bbdf",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\06_USART\\main.c",
+      "hex_sha256": "b38390baa101f25c822ec780a8ec15660381a978eef02f7b15bb98f7b85e93fe",
+      "status": "partial",
+      "conclusion": "已取得部分真实板上证据，未完成项仍需现场验收。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_06_USART\\06_USART.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_06_USART\\06_USART.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "passed",
+          "method": "isp",
+          "observed": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161512_690554.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161512_690554.rx.bin",
+            "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161521_216368_preflash_06_USART_08000000.bin",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_06_USART\\06_USART.hex"
+          ]
+        },
+        {
+          "item": "真实UART数据及原始文件一致性",
+          "status": "passed",
+          "method": "serial",
+          "observed": "收到586字节；SHA256=e9245288ef95471bb6ab0122cb49895d49f0095d6fba5d59a95004cda70df1d3；校验一致=True。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x59",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应='OK Y LED0=1'；状态=STATE ms=47355 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x58",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应=''；状态=STATE ms=47982 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x79",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应=''；状态=STATE ms=48606 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x0d0a",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应=''；状态=STATE ms=49235 LED0=1 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x4e",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应='OK N LED0=0'；状态=STATE ms=49859 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x58",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应=''；状态=STATE ms=50478 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x79",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应=''；状态=STATE ms=51099 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "串口命令0x0d0a",
+          "status": "passed",
+          "method": "serial",
+          "observed": "响应=''；状态=STATE ms=51721 LED0=0 LED1=0 KEY0=0 KEY1=0 IRQ0=0 IRQ1=0 RX_ERRORS=0；仅证明固件报告。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\lab06_isp_serial.raw"
+          ]
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。"
+      ]
+    },
+    {
+      "id": 7,
+      "target": "07_SysTick",
+      "source_sha256": "e43239114dcedf4c79134efccce401bb158c857417791ad4ce97bdb572aef8f8",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\07_SysTick\\main.c",
+      "hex_sha256": "09b6c1083f7b5f35b9f349a64eea72623b1adea94e58867419a425779af87d14",
+      "status": "partial",
+      "conclusion": "已取得部分真实板上证据，未完成项仍需现场验收。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_07_SysTick\\07_SysTick.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_07_SysTick\\07_SysTick.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "passed",
+          "method": "isp",
+          "observed": "当前HEX与Keil构建、ISP下载记录一致；从原始RX重建的完整64KB回读与RMW期望值逐字节一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161800_512782.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161800_512782.rx.bin",
+            "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161809_048688_preflash_07_SysTick_08000000.bin",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_07_SysTick\\07_SysTick.hex"
+          ]
+        },
+        {
+          "item": "真实UART数据及原始文件一致性",
+          "status": "passed",
+          "method": "serial",
+          "observed": "收到840字节；SHA256=0f6b24676c39ebb37614e8689c5a7782faa081112fcffedbc0ac8cc37c6ce99d；校验一致=True。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.raw"
+          ]
+        },
+        {
+          "item": "structured_firmware_state_received",
+          "status": "passed",
+          "method": "serial",
+          "observed": "{\"name\": \"structured_firmware_state_received\", \"passed\": true}",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.raw"
+          ]
+        },
+        {
+          "item": "UART_error_counter_not_increasing",
+          "status": "passed",
+          "method": "serial",
+          "observed": "{\"name\": \"UART_error_counter_not_increasing\", \"passed\": true, \"first\": 0, \"last\": 0}",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.raw"
+          ]
+        },
+        {
+          "item": "coarse_serial_report_alternation",
+          "status": "passed",
+          "method": "serial",
+          "observed": "报告翻转12次；目标间隔1.0秒；PC到达时间均值1.000261秒；区间0.995127～1.004575秒。仅是固件意图/ODR串口报告和PC粗计时，未测LED光线、引脚电压或校准时基。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.raw"
+          ]
+        },
+        {
+          "item": "firmware_reported_1000ms_steps",
+          "status": "passed",
+          "method": "serial",
+          "observed": "{\"name\": \"firmware_reported_1000ms_steps\", \"deltas_ms\": [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000], \"passed\": true, \"scope\": \"Same-device software clock; cannot independently prove physical 1 ms precision.\"}",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.json",
+            "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_161838_727264_serial_lab07.serial.raw"
+          ]
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。",
+        "PC串口时间只能支持粗略时序观察，不证明校准仪器级1 ms精度。"
+      ]
+    },
+    {
+      "id": 8,
+      "target": "08_Application",
+      "source_sha256": "f87edc1ad56ef182ac21168bc51cffe051f5c23bc7c2a2c9a9df5383d647c4ae",
+      "source_file": "D:\\MDK5\\F103_Labs\\Labs\\08_Application\\main.c",
+      "hex_sha256": "f4e6f4a0534bed463fb4d3a0490ae209bd1eb43bb979d4a9b5afb27856bffa61",
+      "status": "not_tested",
+      "conclusion": "已编译；尚无足够真实板上证据。",
+      "checks": [
+        {
+          "item": "Keil重新编译与当前产物哈希",
+          "status": "passed",
+          "method": "offline",
+          "observed": "0错误、0警告；AXF/HEX与编译记录SHA256一致。",
+          "evidence": [
+            "D:\\MDK5\\F103_Labs\\Build\\keil_results.json",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_08_Application\\08_Application.hex",
+            "D:\\MDK5\\F103_Labs\\Build\\Keil_08_Application\\08_Application.axf"
+          ]
+        },
+        {
+          "item": "ISP下载及完整64KB回读校验",
+          "status": "not_tested",
+          "method": "isp",
+          "observed": "没有与当前固件关联的完整有效下载记录。",
+          "evidence": []
+        },
+        {
+          "item": "LED实体发光观察",
+          "status": "not_tested",
+          "method": "visual",
+          "observed": "尚未取得用户明确观察或照片/视频证据；串口报告不能替代。",
+          "evidence": []
+        },
+        {
+          "item": "K1/K4实体按键完整操作",
+          "status": "not_tested",
+          "method": "physical_button",
+          "observed": "无明确实体按键操作证据；未用软件注入代替。",
+          "evidence": []
+        }
+      ],
+      "limitations": [
+        "整项实验尚未标记完全通过；需结合本表未完成项现场验收。",
+        "UART中的LED状态来自固件输出寄存器或意图日志，不能证明LED实体发光。"
+      ]
+    }
+  ],
+  "backup": {
+    "status": "passed",
+    "note": "只有最早成功double_read_backup可称为本次实验前原固件；preflash是各次下载前快照。",
+    "path": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161325_932217_double_read_backup_08000000.bin",
+    "sha256": "9d569e132fe0df839dcbf3128d082ab570e8bdb1fb3aa84e006e333878add0dd",
+    "size": 65536,
+    "device": {
+      "pid": "0x0410",
+      "bootloader_version": "2.2",
+      "supported_commands": [
+        "0x00",
+        "0x01",
+        "0x02",
+        "0x11",
+        "0x21",
+        "0x31",
+        "0x43",
+        "0x63",
+        "0x73",
+        "0x82",
+        "0x92"
+      ],
+      "flash_kib": 64,
+      "uid": "35ff6f064d58303838561543"
+    },
+    "evidence": [
+      "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161309_107244.json",
+      "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161325_932217_double_read_backup_08000000.bin",
+      "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\isp_20261004_161309_107244.rx.bin"
+    ],
+    "original": {
+      "binary": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161325_932217_double_read_backup_08000000.bin",
+      "metadata": "D:\\MDK5\\F103_Labs\\Backup\\ISP_35ff6f064d58303838561543\\20261004_161325_932217_double_read_backup_08000000.json",
+      "sha256": "9d569e132fe0df839dcbf3128d082ab570e8bdb1fb3aa84e006e333878add0dd",
+      "size": 65536
+    },
+    "notes": [
+      "这是本次实验操作前读出的用户原固件；不作“原厂固件”认定。",
+      "各次preflash文件只代表对应下载前的快照，不可替代最早double_read_backup。"
+    ]
+  },
+  "evidence_root": "D:\\MDK5\\F103_Labs\\Evidence\\20261004"
+}

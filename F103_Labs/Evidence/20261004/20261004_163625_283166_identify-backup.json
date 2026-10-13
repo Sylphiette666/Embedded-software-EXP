@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-10-04T16:36:25.283+08:00",
+  "timezone": "UTC+08:00",
+  "mode": "identify-backup",
+  "status": "ERROR",
+  "actual_hardware": false,
+  "probe_requested": "01040166524300093638414B",
+  "target": "stm32f103c8",
+  "pack": "D:\\Keil5\\.Download\\Keil.STM32F1xx_DFP.2.4.1.pack",
+  "port": null,
+  "lab": null,
+  "flash_requested": false,
+  "flash_write_attempted": false,
+  "flash_readback_verified": false,
+  "serial_tx": [],
+  "errors": [
+    {
+      "at": "2026-10-04T16:36:25.830+08:00",
+      "type": "ProbeError",
+      "message": "STLink error (5): No device connected",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\MDK5\\F103_Labs\\tools\\bench_swd.py\", line 436, in main\n    session.open()\n    ~~~~~~~~~~~~^^\n  File \"D:\\F411_PythonEnv\\Lib\\site-packages\\pyocd\\core\\session.py\", line 660, in open\n    self._probe.set_clock(self.options.get('frequency'))\n    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\F411_PythonEnv\\Lib\\site-packages\\pyocd\\probe\\stlink_probe.py\", line 196, in set_clock\n    self._link.set_swd_frequency(frequency)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"D:\\F411_PythonEnv\\Lib\\site-packages\\pyocd\\probe\\stlink\\stlink.py\", line 289, in set_swd_frequency\n    self._check_status(response)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"D:\\F411_PythonEnv\\Lib\\site-packages\\pyocd\\probe\\stlink\\stlink.py\", line 381, in _check_status\n    raise exceptions.ProbeError(error_message)\npyocd.core.exceptions.ProbeError: STLink error (5): No device connected\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "evidence_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_163625_283166_identify-backup.json",
+  "serial_raw_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_163625_283166_identify-backup.serial.raw",
+  "serial_timestamped_file": "D:\\MDK5\\F103_Labs\\Evidence\\20261004\\20261004_163625_283166_identify-backup.serial.jsonl",
+  "limitations": [
+    "No simulated GPIO, IRQ injection, or target handler calls.",
+    "SWD output/input registers do not establish visible LED illumination.",
+    "Host-timed samples do not establish oscilloscope-level 1 ms precision.",
+    "Physical key operation and ISP/ST-Link method acceptance need explicit evidence."
+  ],
+  "phase": "attach_identify",
+  "finished_at": "2026-10-04T16:36:25.832+08:00",
+  "exit_code": 1
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "0x0410",
+  "bootloader_version": "2.2",
+  "supported_commands": [
+    "0x00",
+    "0x01",
+    "0x02",
+    "0x11",
+    "0x21",
+    "0x31",
+    "0x43",
+    "0x63",
+    "0x73",
+    "0x82",
+    "0x92"
+  ],
+  "flash_kib": 64,
+  "uid": "35ff6f064d58303838561543",
+  "created_at": "2026-10-04T16:13:25.933714+08:00",
+  "address": 134217728,
+  "length": 65536,
+  "sha256": "9d569e132fe0df839dcbf3128d082ab570e8bdb1fb3aa84e006e333878add0dd",
+  "binary": "20261004_161325_932217_double_read_backup_08000000.bin",
+  "purpose": "double_read_backup"
+}

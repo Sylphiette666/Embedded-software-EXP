@@ -1,0 +1,431 @@
+{
+  "created_at": "2026-10-04T16:29:21.305623+08:00",
+  "project": "STM32F103C8T6 F103_Labs",
+  "files": [
+    {
+      "path": "App/platform.c",
+      "bytes": 7755,
+      "sha256": "a9715f43b12379611b23d1582bc684ba9f05de615f235dff9716e5cf6e673101"
+    },
+    {
+      "path": "App/platform.h",
+      "bytes": 1014,
+      "sha256": "86b1f296bed471d0d71fe7ec10634e414724255aebd9097a90759bf3e013269b"
+    },
+    {
+      "path": "App/stm32f10x_conf.h",
+      "bytes": 233,
+      "sha256": "c661544775c94ba0bb5f8f1b8c6adeac9efcb2f14f30744ebca0cc0b49b086c7"
+    },
+    {
+      "path": "App/system_lab.c",
+      "bytes": 36216,
+      "sha256": "42599b96d5d72942db461dc39bb1fe8817dea894fa1add44dbdf7f58b91f741f"
+    },
+    {
+      "path": "Labs/01_Platform/main.c",
+      "bytes": 443,
+      "sha256": "adf43d32cfaade9af1d56b3a4ae61508c7707e2d7412473ccf1257518773099e"
+    },
+    {
+      "path": "Labs/02_Register/main.c",
+      "bytes": 674,
+      "sha256": "aa957aa53eedcea0a422e1b35c54ac588f846033f1cfa224990eabda2dfc76f7"
+    },
+    {
+      "path": "Labs/03_StdPeriph/main.c",
+      "bytes": 305,
+      "sha256": "b2182afefe89e6cac2ed76956524c5c4e27e1129837a13aeeafda0cb4069be84"
+    },
+    {
+      "path": "Labs/04_Keys/main.c",
+      "bytes": 607,
+      "sha256": "586bf59fc421c64644e01fa065e570ddbf2bedf757d671627578b4f66e83a6ae"
+    },
+    {
+      "path": "Labs/05_EXTI/main.c",
+      "bytes": 487,
+      "sha256": "beb89506338b2ea9d8a69b27630600e837bd425fe3d049ac311411527de6deeb"
+    },
+    {
+      "path": "Labs/06_USART/main.c",
+      "bytes": 501,
+      "sha256": "9a1c3bb7c30eae061269ce6f6a9d7d182971b654c4494f4c0dc6b40ae130bbdf"
+    },
+    {
+      "path": "Labs/07_SysTick/main.c",
+      "bytes": 431,
+      "sha256": "e43239114dcedf4c79134efccce401bb158c857417791ad4ce97bdb572aef8f8"
+    },
+    {
+      "path": "Labs/08_Application/main.c",
+      "bytes": 959,
+      "sha256": "f87edc1ad56ef182ac21168bc51cffe051f5c23bc7c2a2c9a9df5383d647c4ae"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/cmsis_armcc.h",
+      "bytes": 27999,
+      "sha256": "5bc0d7ed8e36e9bcb868c4042fff350c702eca305df4162fb00384789e35ee1c"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/cmsis_armclang.h",
+      "bytes": 48417,
+      "sha256": "d5da2b48204f0d0cf1ff38ffccb527e5706cd0a091ff0a331eb41d6596c33fe5"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/cmsis_compiler.h",
+      "bytes": 9481,
+      "sha256": "b51963d271c1571ca3463654c76aa7ea50c4eac5d0a2710df10414ac64d9e0f8"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/cmsis_gcc.h",
+      "bytes": 63374,
+      "sha256": "43bfd1fe69fbbc2ca70aaf7d43cc3e20f16e0c7f66e1bdef9b51af6dc14b2617"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/cmsis_version.h",
+      "bytes": 1680,
+      "sha256": "184c19fd3ee73632edf35a0b4d49cd48be75fbf49e6ccb19d9db05fa83bea4b3"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/core_cm3.h",
+      "bytes": 109529,
+      "sha256": "c9937781259a8897adf514445441c68570087d6a72a558d8a4afe75cdb62dbd2"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/core_cm4.h",
+      "bytes": 120975,
+      "sha256": "f5b63d52dd1557b15ca414cb59c264f595a7b5669db2a5878dffe22f4caedc8c"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "Vendor/CMSIS5_Core/mpu_armv7.h",
+      "bytes": 11731,
+      "sha256": "29206b52ee02290ed6f5a5415ebd4187de802cf176d9b3cb844390d8e5571372"
+    },
+    {
+      "path": "Vendor/Device/Include/stm32f10x.h",
+      "bytes": 637444,
+      "sha256": "c1ad50854913946533fea40bbb028fb08a2506ca43f2d0a74484b54499f42d9a"
+    },
+    {
+      "path": "Vendor/Device/Include/system_stm32f10x.h",
+      "bytes": 1744,
+      "sha256": "94c42088cb2e8ee8cce2e4341aa66f83e47e3f05fa93ed8f2da6071205b5cd20"
+    },
+    {
+      "path": "Vendor/Device/Source/startup_stm32f10x_md.s",
+      "bytes": 12509,
+      "sha256": "620c696234a2932e4b2d7b60e128171dd18ee04fdc2196bfd02290b4a0db4b39"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/misc.h",
+      "bytes": 8641,
+      "sha256": "97d7414336a55e1fd22c5d1c1d1b7a66583d158732db3bb60c601bd9b62d55e1"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_adc.h",
+      "bytes": 21349,
+      "sha256": "ed7f95fbbac933195b6f78951c063b20c92ee7a0feaa5b3c35ffb3d1e6827875"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_bkp.h",
+      "bytes": 7214,
+      "sha256": "47c41f16d586f7d4b2097726da0e093a5fb98f2b2535d56b404cc48127bb8109"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_can.h",
+      "bytes": 27218,
+      "sha256": "3229f604e895fd510219a44cc3eca6f7c8c159cab4792579f4225704463d8ebb"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_cec.h",
+      "bytes": 6232,
+      "sha256": "a79a46e2d09d151553e11043a3ae715a7b41be17b356520da7765145eb5da2d2"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_crc.h",
+      "bytes": 1821,
+      "sha256": "c81463fbcc940a6006c39452a102b13c100531a9b5ce2ac42844aa58416bdc30"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_dac.h",
+      "bytes": 14892,
+      "sha256": "d49423ed9a83e1d8a8e1bb7c5f887b179b5270d58c6b14cab73e3e737c890979"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_dbgmcu.h",
+      "bytes": 3477,
+      "sha256": "06584fa1a80d5f6c2885a47b821e886ae80dec3b89f256cab6b82383d04856f3"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_dma.h",
+      "bytes": 20413,
+      "sha256": "18fdcd86938d2b6633df470bb5b8923649bd06a8f2b260e2f80338dd604eb689"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_exti.h",
+      "bytes": 6486,
+      "sha256": "e352d96e5f61c4e1b9281a5bd8fa60f1841d9a5870719fdecf4cfa36a7ebeff3"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_flash.h",
+      "bytes": 25104,
+      "sha256": "425dc48c22762c87e8561e42a4776dc241580c0289bb4132ba2767e4122c0edf"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_fsmc.h",
+      "bytes": 26675,
+      "sha256": "90414e5b578e182719c42153efdb8a4986a2e57cba9167908f6076c3a6605c6e"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_gpio.h",
+      "bytes": 19834,
+      "sha256": "543647ca5547c6db6193ab014936027ecbd0991cd52de66a31a183a42c780e37"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_i2c.h",
+      "bytes": 29688,
+      "sha256": "90218c5ff9f01f805f4a86901ad1662bc5fd0a01fde48db22a472ef4e1a68bc2"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_iwdg.h",
+      "bytes": 3487,
+      "sha256": "022ebb8f10ec94e118d5ec05b2069990b4493821d279e6c2ba34c1e3e8d34f4a"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_pwr.h",
+      "bytes": 4042,
+      "sha256": "eec75ba7931b9f28a09dae57fb6a5644f0d67f8a936b209afc15bd2d354fda8b"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_rcc.h",
+      "bytes": 30111,
+      "sha256": "4d846ea385234266155a52d5701183c57d290d823ddb0e94c0c2d16cc6785c24"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_rtc.h",
+      "bytes": 3516,
+      "sha256": "b4e34936f1f1f22b977faa99e74945571a4aeaa10ec2f705cafae849d994322e"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_sdio.h",
+      "bytes": 21522,
+      "sha256": "8d2c2d7defacded9216399704fdd8dd035f1ca7e1f901238ae88971ce269078d"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_spi.h",
+      "bytes": 17384,
+      "sha256": "63f8394ef649802cc13173e34674e5404b10f3f8981a8ba1b233005ad886f85d"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_tim.h",
+      "bytes": 52086,
+      "sha256": "d85e6832b9d9b273e4abae27a43344ca2aa27592d1051b684c3fe5ac45244760"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_usart.h",
+      "bytes": 16355,
+      "sha256": "34e41470ab37857162f5db9bb1f1b78be8cedfa3cd0d0e29f133eadbbb40ad93"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/inc/stm32f10x_wwdg.h",
+      "bytes": 2625,
+      "sha256": "8769211b6447aa1762b2216270c6c97662e9b4c99704ff3383b1b89c2152c68c"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/LICENSE.txt",
+      "bytes": 4742,
+      "sha256": "c7ec30c26e3e1cd1972fab8cb88cc6ff0c94698e68cf20acd74fd8ad91827c0f"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/misc.c",
+      "bytes": 6705,
+      "sha256": "26f3185c833e194c2935b2e75e3a44088a453be15b5717e4ba73495b3bf8879e"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_adc.c",
+      "bytes": 46860,
+      "sha256": "2e852fd85dfbf72dc32828ac206d4fae0f766e81011226def325f40fc3440ccd"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_bkp.c",
+      "bytes": 8122,
+      "sha256": "14709e2ae4a1059853d186c7c9cc20f87e72e1b71f384af947965b993c472de3"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_can.c",
+      "bytes": 44762,
+      "sha256": "0076401917685412a7249a5c231312dc9895582a3ae7cefe7ed1cf12f910524d"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_cec.c",
+      "bytes": 11315,
+      "sha256": "2809de98d8f6585da209890e84e691af806c1fadf7fffeb46ef1621543758172"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_crc.c",
+      "bytes": 3006,
+      "sha256": "47222eee22b03dae904d6ba3c0d36032050cacbc9510119680dc019e697627d8"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_dac.c",
+      "bytes": 18746,
+      "sha256": "3303a0f7f0a646084ea83fa6687a40760529b789bfd9dc1dbd2c970e3e1e42cf"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_dbgmcu.c",
+      "bytes": 4808,
+      "sha256": "83266150a52023d7f8c638ed44fcfa158af7597018b8b032b519d939ece35100"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_dma.c",
+      "bytes": 29266,
+      "sha256": "9b88c7f4ad6153612295002757c732251e9056e639b0d4aec8b80bcbfaadcf43"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_exti.c",
+      "bytes": 6618,
+      "sha256": "c472b11d2ab7c18c8a06214815ca34895347e55a1eadbd87410263caa0057422"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_flash.c",
+      "bytes": 62023,
+      "sha256": "3892046c3ff99785ad1dcef4d21340d9d3b15a31b8c4a6f1a453508e0b5bf252"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_fsmc.c",
+      "bytes": 35143,
+      "sha256": "9803ed7a3ee09c52477816e85444b5d16df45cb08112c825d29c9b983c5ad087"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_gpio.c",
+      "bytes": 22880,
+      "sha256": "827fc27aeb7160a0e3282a1124fd2430fe00a0fdf1b8184cc3b26dd147c17060"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_i2c.c",
+      "bytes": 45440,
+      "sha256": "2ca22c2c6f463f43a31a6a1db9676f9a3912a4df9da1d323ffa9a2bc7d94a6f6"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_iwdg.c",
+      "bytes": 4575,
+      "sha256": "2aa2682f705408bcda67e173beb55fd71f6facda87fe3794e1f55b21f374c245"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_pwr.c",
+      "bytes": 8469,
+      "sha256": "4a4bff32f84dcd516ba1f4ba18ee2895f8d1f19edebe65c8b3b7d4a00b5eed8d"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_rcc.c",
+      "bytes": 51005,
+      "sha256": "0ddce9581915c2cdb8e76b26f8c65504db6058f984650f7fa6f4e117c617d503"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_rtc.c",
+      "bytes": 8713,
+      "sha256": "4f7444ed6306bfd4711c5942fa1de67f8c3342b9657f46b18552be94317f70b5"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_sdio.c",
+      "bytes": 28555,
+      "sha256": "56d8917ba9190335cd2926356bfd9009c884124005bbcf5a0f355c28629d9fa5"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_spi.c",
+      "bytes": 29883,
+      "sha256": "f68543f864bc2ab35dba984418f7c7294b4be4523db2077d166dca143565e21d"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_tim.c",
+      "bytes": 108818,
+      "sha256": "a7f2c379b1c17189fd41f46912f9ff110e1c3d8f56512a5df98582f32f707fd5"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_usart.c",
+      "bytes": 38074,
+      "sha256": "796883d0317edebe6abfdb27b823650c22ea23b4a1abf9adc0a2b8cf79527345"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/src/stm32f10x_wwdg.c",
+      "bytes": 5394,
+      "sha256": "4b5c8327544ecc047b6c2344b53bb0df40c6604e584637210669390d9f5db08a"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/templates/stm32f10x_conf.h",
+      "bytes": 3903,
+      "sha256": "8a3dada35c409a0c48ffa29ef1e2b5b286a9e6c76efff735698d623d902b8792"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/templates/stm32f10x_it.c",
+      "bytes": 4166,
+      "sha256": "72054b7f71a188388e08bb5c6c9362edadb2b057a9a93316b3509d2c61ceec67"
+    },
+    {
+      "path": "Vendor/StdPeriph_Driver/templates/stm32f10x_it.h",
+      "bytes": 1742,
+      "sha256": "98bed0697c2fc399f7e9e3e62f17ccbe7b4343a95af16ae595dcab1bfea554a0"
+    },
+    {
+      "path": "MDK/F103_Labs.uvoptx",
+      "bytes": 49732,
+      "sha256": "573cbf8cb2c1277d7b2cbafb0be8214014c41ca884a122062439c1f1f5bc84e2"
+    },
+    {
+      "path": "MDK/F103_Labs.uvprojx",
+      "bytes": 194118,
+      "sha256": "6852e1ffb27a9a7f3b670f537ce6100e0aaa4449f35c77474896c15412a09bbc"
+    },
+    {
+      "path": "MDK/flash.sct",
+      "bytes": 224,
+      "sha256": "77c32897a8ad3047bd1290aa2b3aa9c50234ff5658889b9b446a2dfeafed96bc"
+    },
+    {
+      "path": "tools/bench_isp.py",
+      "bytes": 19841,
+      "sha256": "420d6462bb0e4332323d48e1f1d2d819f1f4abe094ab55c46f931d64bb41c3b1"
+    },
+    {
+      "path": "tools/bench_serial.py",
+      "bytes": 15832,
+      "sha256": "acf4d502b5d5251a32047c7a6503ffdd108360e4e6f405b7e376d338472ed926"
+    },
+    {
+      "path": "tools/bench_swd.py",
+      "bytes": 27856,
+      "sha256": "cedfb03b88c83ae93e1b3113bab5a3fdc3251ffa2a3aadc05ec021cf562d0f57"
+    },
+    {
+      "path": "tools/build_keil.py",
+      "bytes": 1980,
+      "sha256": "bc026fc320c2aa6011dc3fc1296b2d6053917df2e10413e8ac775c63969a046f"
+    },
+    {
+      "path": "tools/check_firmware_logic.py",
+      "bytes": 12544,
+      "sha256": "11f74c59617bbf1c6eaa58953c6676103b2b20b70b750b7abe9aaf80d4cac2a9"
+    },
+    {
+      "path": "tools/check_project.py",
+      "bytes": 4612,
+      "sha256": "c802a0bb54ad03e7186e8207073acbdef12211ba8debd00cc8791210b0baddab"
+    },
+    {
+      "path": "tools/requirements.txt",
+      "bytes": 78,
+      "sha256": "a7ac14fdb7ddf640bbdfad0b1b30df10a2de206c0b1e5d2abd83d1d86c4082e8"
+    },
+    {
+      "path": "tools/summarize_evidence.py",
+      "bytes": 18971,
+      "sha256": "71ac7cd6c16d81a6f98bbb5359a2daf80218889bf9ec981a8927226b440a9ae6"
+    }
+  ]
+}
