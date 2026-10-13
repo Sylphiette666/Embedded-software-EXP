@@ -1,0 +1,10 @@
+{
+  "record_type": "operator_confirmation",
+  "source": "User explicitly confirmed all experiments have completed acceptance",
+  "statement": "我均已完成验收",
+  "scope": "Experiments 1 through 8",
+  "acceptance_status": "passed",
+  "new_instrument_measurements_added": false,
+  "signatures_added": false,
+  "historical_evidence_modified": false
+}

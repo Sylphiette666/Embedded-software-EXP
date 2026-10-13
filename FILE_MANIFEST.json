@@ -1,7 +1,7 @@
 {
   "date": "2026-10-13",
   "report_pages": 25,
-  "report_visual_qa": "All 25 pages inspected after Word PDF export and PNG rendering",
+  "report_visual_qa": "All 25 pages inspected after acceptance-results update",
   "hardware_evidence_added": [
     "Lab 6 Tera Term screenshot",
     "Three user-supplied OLED board photographs"
@@ -600,8 +600,8 @@
       "sha256": "77c32897a8ad3047bd1290aa2b3aa9c50234ff5658889b9b446a2dfeafed96bc"
     },
     "F103_Labs/README.md": {
-      "bytes": 8759,
-      "sha256": "409b6138fd5791d42d55456a8df6e48ad32bc48f19087003f21dcb99718b1194"
+      "bytes": 8810,
+      "sha256": "7ed20ce6bd19d097382a78cbc67c425611cffcc5d9287ed4d3677fa2e635e2d2"
     },
     "F103_Labs/Vendor/CMSIS5_Core/LICENSE.txt": {
       "bytes": 11357,
@@ -904,8 +904,8 @@
       "sha256": "402b4463956890e851143b2e5f62361f52b1a2818f869ca1accfc8d92f69dfcb"
     },
     "README.md": {
-      "bytes": 4719,
-      "sha256": "9e3abec3eb9acce1f08a19a51a81bccffef3ecd9a62c2f2fe458239853079640"
+      "bytes": 4875,
+      "sha256": "34358729d3dd8df6b57d1fc7a370396bde86f506de7e7dbb9ded6820cd3aa742"
     },
     "archives/NUCLEO_F411RE_实验工程.zip": {
       "bytes": 1014911,
@@ -928,20 +928,20 @@
       "sha256": "0d6396ca0b287e969cc5ec723fc8c4c13f59d38d7021f9aef8c458da6b59cd31"
     },
     "docs/configuration/实验工程入口.md": {
-      "bytes": 8010,
-      "sha256": "3303c8ca409f7a092047cd6d5e3379a7c915de1cf594f339d16faa524741eda1"
+      "bytes": 8061,
+      "sha256": "3b67d998e10f2678d14fbef641b5bdf39934edbeeb9293bc8fceb21f2df06b2b"
     },
     "docs/configuration/当前硬件配置.md": {
-      "bytes": 8010,
-      "sha256": "3303c8ca409f7a092047cd6d5e3379a7c915de1cf594f339d16faa524741eda1"
+      "bytes": 8061,
+      "sha256": "3b67d998e10f2678d14fbef641b5bdf39934edbeeb9293bc8fceb21f2df06b2b"
     },
     "docs/configuration/软件与环境安装记录.md": {
       "bytes": 5128,
       "sha256": "31bfa3040f78bb8218165f870000fc4c3db1c2817bedc3badcfe29cbe68b4c53"
     },
     "docs/configuration/软件与环境安装记录_F103.md": {
-      "bytes": 8010,
-      "sha256": "3303c8ca409f7a092047cd6d5e3379a7c915de1cf594f339d16faa524741eda1"
+      "bytes": 8061,
+      "sha256": "3b67d998e10f2678d14fbef641b5bdf39934edbeeb9293bc8fceb21f2df06b2b"
     },
     "docs/history/NUCLEO_F411RE_八项实验详细调试流程.docx": {
       "bytes": 298107,
@@ -996,8 +996,8 @@
       "sha256": "7e484f1e6c356a4c79dedf3f043adcbff701546bfe605a8a6cb35d7b4159093a"
     },
     "docs/嵌入式系统实验报告_STM32F103_OLED整合版_20261013.docx": {
-      "bytes": 21767456,
-      "sha256": "c991c267d0f630c0cb7a85d45c6f67bb89718cafa15e78a4a21d137b6b98fa1e"
+      "bytes": 21767619,
+      "sha256": "cb8782e46a41fe6e903f2305b4870ea06751c20452171b7b4c390935d06ab343"
     },
     "tools/history_f411/build_debug_guide.py": {
       "bytes": 41209,
@@ -1034,6 +1034,11 @@
     "tools/local_workflows/word_render.ps1": {
       "bytes": 2845,
       "sha256": "2dcfeec813df8dc7b2a0c181263173114c0f75d411cdbfb3dfafb335e4f49b69"
+    },
+    "F103_Labs/Evidence/20261013/acceptance_confirmation.json": {
+      "bytes": 363,
+      "sha256": "8d812a4abe5a3030d67556ba41a8ef73488f98d4c252ea799f0d7dac425535d2"
     }
-  }
+  },
+  "acceptance_status": "All eight experiments passed, per operator confirmation"
 }
