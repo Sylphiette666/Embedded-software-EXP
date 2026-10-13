@@ -1,7 +1,7 @@
 {
   "date": "2026-10-13",
-  "report_pages": 25,
-  "report_visual_qa": "All 25 pages inspected after acceptance-results update",
+  "report_pages": 21,
+  "report_visual_qa": "All 21 pages inspected after guide alignment and reference formatting; eight source listings flow continuously across three appendix pages; all original report media preserved.",
   "hardware_evidence_added": [
     "Lab 6 Tera Term screenshot",
     "Three user-supplied OLED board photographs"
@@ -904,8 +904,8 @@
       "sha256": "402b4463956890e851143b2e5f62361f52b1a2818f869ca1accfc8d92f69dfcb"
     },
     "README.md": {
-      "bytes": 4875,
-      "sha256": "34358729d3dd8df6b57d1fc7a370396bde86f506de7e7dbb9ded6820cd3aa742"
+      "bytes": 4995,
+      "sha256": "0c2f8c9970d5e8db3a48c7a656f0dae57ad6209d14f32e4466f004b4e213eaa0"
     },
     "archives/NUCLEO_F411RE_实验工程.zip": {
       "bytes": 1014911,
@@ -996,8 +996,8 @@
       "sha256": "7e484f1e6c356a4c79dedf3f043adcbff701546bfe605a8a6cb35d7b4159093a"
     },
     "docs/嵌入式系统实验报告_STM32F103_OLED整合版_20261013.docx": {
-      "bytes": 21767619,
-      "sha256": "cb8782e46a41fe6e903f2305b4870ea06751c20452171b7b4c390935d06ab343"
+      "bytes": 21815609,
+      "sha256": "ff6f3f20929ce6f69e4f40c500316c0ead099b76f28d762d8c1157022d06357e"
     },
     "tools/history_f411/build_debug_guide.py": {
       "bytes": 41209,
